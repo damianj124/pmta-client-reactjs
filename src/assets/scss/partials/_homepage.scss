@@ -1,0 +1,428 @@
+/* Homepage styles */
+
+.homepage {
+	background-color: #ffffff;
+
+	/* Intro section styles start */
+
+	.intro {
+		background-color: $color-white-smoke;
+
+		.img {
+			width: 100%;
+			max-width: 850px;
+			max-height: 667px;
+			position: relative;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			&:before {
+				content: " ";
+				background-image: url(../img/Triangle.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 55px;
+				display: none;
+				z-index: 1;
+			}
+
+			&:after {
+				content: " ";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				background-color: $color-purple-light-9;
+				display: none;
+			}
+		}
+
+		.intro-content {
+			padding-left: 85px;
+
+			.intro-title {
+				color: $color-green-light;
+				font-family: $font-din-regular;
+				font-weight: 600;
+				margin-bottom: 10px;
+				letter-spacing: 1.5px;
+			}
+
+			.intro-slogan {
+				font-size: 50px;
+				color: $color-black;
+				font-family: $font-din-bold;
+				margin-bottom: 20px;
+			}
+
+			.intro-desc {
+				font-family: $font-avenir-next-regular;
+				font-size: $xl;
+				color: $color-black;
+				font-weight: 300;
+				margin-right: 230px;
+			}
+		}
+	}
+
+	/* Intro section styles end */
+
+	/* Invoice section styles start */
+
+	.invoice-intro {
+		padding: 175px 0;
+		background-color: $color-white-smoke;
+
+		.invoice-content {
+
+			.invoice-slogan {
+				font-family: $font-avenir-condensed-light;
+				font-size: 70px;
+				color: $color-black;
+
+				span {
+					font-family: $font-primary;
+				}
+			}
+
+			.invoice-desc {
+				font-size: 34px;
+				font-family: $font-avenir-next-regular;
+				letter-spacing: 4px;
+				margin-top: 10px;
+			}
+		}
+
+		.invoice-demo {
+			margin-top: 135px;
+			background-color: #ffffff;
+			padding: 120px 100px 230px 120px;
+			width: 100%;
+			max-width: 1390px;
+			box-shadow: 0 3px 15px 0 rgba(0,0,0,0.1);
+
+			.section-title {
+
+				&.short {
+					display: none;
+					color: $color-black;
+					text-align: left;
+
+					&:after {
+						width: 65px;
+						margin-top: 0;
+					}
+				}
+			}
+
+			.approval {
+
+				.content {
+
+					.css-xp4uvy {
+						font-size: 17px;
+					}
+				}
+			}
+
+			.section-desc {
+				display: none;
+				font-size: 20px;
+				font-family: $font-avenir-next-regular;
+				color: #8F8F8F;
+				margin-bottom: 40px;
+			}
+
+			.demo {
+
+				.demo-mobile-content {
+
+					p {
+						padding: 20px 0;
+						color: #9C9C9C;
+						font-size: 16px;
+
+						&.bg-color {
+							background-color: $color-gray-light;
+						}
+					}
+				}
+
+				.items {
+
+					.item {
+						margin-bottom: 15px;
+					}
+				}
+
+				.select-box {
+					min-width: 300px;
+
+					.label {
+						min-width: 125px;
+					}
+
+					.css-vj8t7z {
+						border-color: transparent;
+					}
+
+					.css-1492t68, .css-xp4uvy, .css-1ep9fjw {
+						color: #000000;
+					}
+
+					.css-1hwfws3 {
+						justify-content: center;
+					}
+
+					.css-d8oujb {
+						background-color: transparent;
+					}
+
+					.css-10nd86i {
+						font-size: $xs;
+					}
+
+					&.light-grey {
+
+						.css-vj8t7z, .css-10nd86i {
+							background-color: #F4F4F4;
+						}
+					}
+
+					&.dark-grey {
+
+						.css-vj8t7z, .css-10nd86i {
+							background-color: #D2D2D2;
+						}
+
+						.content {
+							max-width: 195px;
+						}
+					}
+				}
+
+				.price {
+					background-color: $color-green-light;
+					color: #000000;
+					font-size: 16px;
+					padding: 0 20px;
+					margin-left: 35px;
+					height: 57px;
+					line-height: 57px;
+					width: 100%;
+				}
+
+				.lines-img {
+					max-width: 229px;
+					max-height: 78px;
+					margin: 20px 10px 0 30px;
+
+					img {
+						max-width: 100%;
+						height: auto;
+					}
+				}
+
+				.charges {
+					margin-top: 18px;
+
+					p {
+						font-size: 16px;
+						color: #9C9C9C;
+						font-family: $font-helvetica;
+						padding: 14px 5px;
+						display: flex;
+						justify-content: space-between;
+
+						&.bg-color {
+							background-color: #E8E8E8;
+						}
+
+						span {
+							margin-left: 25px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* Invoice section styles end */
+
+	/* Accounts receivable section styles start */
+
+	.accounts-intro {
+		padding: 155px 0 700px 0;
+		background-color: $color-green-light;
+		display: flex;
+		position: relative;
+
+		.account-content {
+
+			.section-desc {
+				margin-right: 140px;
+			}
+
+			.btn {
+				position: relative;
+			}
+		}
+
+		.email-intro {
+			font-family: $font-bradley-hand-bold;
+			font-size: $xxl;
+			color: $color-gray-dark;
+			background-color: #ffffff;
+			padding: 105px 80px 215px 100px;
+			position: absolute;
+			bottom: -146px;
+			width: 100%;
+			max-width: 880px;
+			@include XAlign();
+
+			.item-list {
+
+				li {
+					padding: 2px 0;
+					font-size: $xl;
+
+					.label {
+						margin-right: 70px;
+						display: inline-block;
+						min-width: 360px;
+					}
+				}
+			}
+		}
+
+		&:after {
+			background-color: #ffffff;
+			height: 45px;
+		}
+	}
+
+	/* Accounts receivable section styles end */
+
+	/* Space section styles start */
+
+	.space {
+		background-color: #ffffff;
+		height: 45px;
+	}
+
+	/* Space section styles end */
+
+	/* COIs section styles start */
+
+	.cois-intro {
+		background-color: #E9E9E9;
+		padding: 260px 0 310px 0;
+
+		.cois-content {
+			max-width: 900px;
+			margin: 0 auto;
+
+			.section-desc {
+				max-width: 470px;
+			}
+
+			.img {
+				width: 100%;
+				max-width: 218px;
+				max-height: 448px;
+				position: relative;
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+
+				.cover {
+					position: absolute;
+					bottom: 7px;
+					right: 0;
+					left: 0;
+					background-color: rgba(#040404, 0.2);
+					max-height: 282px;
+				}
+			}
+		}
+	}
+
+	/* COIs section styles end */
+
+	/* Contracts section styles start */
+
+	.contracts-intro {
+		padding: 135px 0 180px 0;
+		background-color: $color-white-smoke;
+
+		.contracts-content {
+			position: relative;
+
+			.section-desc {
+				max-width: 400px;
+			}
+
+			.license-content {
+				width: 100%;
+				max-width: 500px;
+				margin-right: 50px;
+
+				.license-info {
+
+					.check {
+						width: 50px;
+						min-width: 50px;
+						height: 50px;
+						border-radius: $radius-rounded;
+						border: 2px solid $color-primary;
+						text-align: center;
+						margin-right: 5px;
+
+						.icon-check {
+							color: $color-black;
+							font-weight: 900;
+							font-size: $xxl;
+							line-height: 46px;
+						}
+					}
+
+					.message {
+						font-family: $font-avenir-next-regular;
+						color: $color-black;
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+
+		.schedule {
+			text-align: center;
+			margin-top: 162px;
+			padding-top: 180px;
+			border-top: 1px solid #ECECEC;
+
+			.desc {
+				font-family: $font-avenir-medium;
+				color: #6D6D6D;
+				margin-top: 10px;
+			}
+
+			.btn {
+				height: 110px;
+				line-height: 110px;
+				border-radius: 8px;
+			}
+		}
+	}
+
+	/* Contracts section styles end */
+}

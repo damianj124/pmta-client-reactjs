@@ -1,0 +1,112 @@
+/* Tabs responsive styles */
+
+@media only screen and (max-width: $screen-lg) {
+
+	.tabs {
+
+		li {
+			font-size: $xl;
+		}
+	}
+
+	.tab-items {
+
+		.tab-item {
+
+			.img {
+				margin-right: 50px!important;
+			}
+
+			.tab-title {
+				font-size: $md;
+			}
+
+			.tab-desc {
+				font-size: $sm;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm) {
+
+	.tabs {
+
+		li {
+			font-size: $sm;
+
+			a {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+	}
+
+	.tab-items {
+
+		.tab-item {
+			flex-direction: column-reverse;
+			align-items: center;
+
+			.img {
+				margin-right: 0!important;
+				margin-top: 40px;
+			}
+
+			.tab-desc {
+				max-width: none;
+			}
+
+			.tab-desc, .tab-title {
+				margin: 0 13px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-xs) {
+
+	.tabs {
+
+		li {
+			font-size: $xxs;
+
+			a {
+				padding-top: 7px;
+				padding-bottom: 7px;
+
+				&::after {
+					border-width: 10px;
+					bottom: -8px;
+				}
+			}
+		}
+	}
+
+	.tab-items {
+		margin-top: 26px;
+
+		.tab-item {
+
+			.img {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+
+			.tab-desc {
+				margin-top: 10px!important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-xs) {
+
+	.tabs {
+
+		li {
+			font-size: 11px;
+			margin-right: 4px;
+		}
+	}
+}

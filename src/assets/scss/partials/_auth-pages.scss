@@ -1,0 +1,60 @@
+/* Auth pages */
+
+.auth-pages {
+
+	.auth-content {
+		padding-top: 110px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+
+		.auth-title {
+			font-size: 70px;
+			font-weight: 300;
+			font-family: $font-avenir-next-regular;
+			color: #000000;
+			letter-spacing: 5.23px;
+			margin-bottom: 16px;
+		}
+
+		.auth-subtitle {
+			font-size: 20px;
+			color: #868686;
+			font-family: $font-avenir-next-regular;
+			font-weight: 300;
+			margin-bottom: 80px;
+		}
+
+		form {
+			width: 100%;
+			max-width: 700px;
+			margin-left: 385px;
+
+			.text-field {
+				width: 100%;
+				max-width: 362px;
+
+				input {
+					height: 77px;
+					line-height: 77px;
+					font-family: $font-avenir-roman;
+					font-size: 20px;
+					border-color: #979797;
+				}
+			}
+
+			.btn {
+				font-family: $font-avenir-roman;
+			}
+		}
+
+		.info-text {
+			font-size: 20px;
+			color: #C7C7C7;
+			font-family: $font-avenir-medium;
+			padding-top: 15px;
+			margin-left: 50px;
+		}
+	}
+}

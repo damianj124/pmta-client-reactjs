@@ -1,0 +1,35 @@
+/* Managers approval */
+
+.manager-approval {
+
+	.items {
+		margin-top: 160px;
+	}
+
+	.managers-table {
+		max-width: 850px;
+
+		table {
+			table-layout: fixed;
+
+			th {
+
+				&:nth-child(1) {
+					width: 27%;
+				}
+
+				&:nth-child(2) {
+					width: 53%;
+				}
+
+				&:nth-child(3) {
+					width: 21%;
+				}
+			}
+
+			td {
+				padding-right: 25px;
+			}
+		}
+	}
+}

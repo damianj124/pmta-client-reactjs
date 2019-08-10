@@ -1,0 +1,65 @@
+/* Budget calendar */
+
+.budget-calendar {
+
+	.items {
+		padding-top: 100px;
+		max-width: 900px;
+		margin-left: 15px;
+
+		.item {
+			padding-bottom: 30px;
+			background-color: #EBEBEB;
+		}
+	}
+
+	.budget-calendar-table {
+
+		table {
+
+			th {
+
+				&:nth-child(1) {
+					width: 33.333%;
+					text-align: left;
+				}
+
+				&:nth-child(2) {
+					width: 33.333%;
+					text-align: center;
+				}
+
+				&:nth-child(3) {
+					width: 33.333%;
+					text-align: right;
+				}
+			}
+
+			td {
+
+				&:nth-child(1) {
+					text-align: left;
+				}
+
+				&:nth-child(2) {
+					text-align: center;
+				}
+
+				&:nth-child(3) {
+					text-align: right;
+				}
+
+				&:after {
+					content: attr(data-label);
+					display: none;
+					color: #ABABAB;
+					font-weight: 400;
+				}
+			}
+
+			&.d-none {
+				display: none;
+			}
+		}
+	}
+}

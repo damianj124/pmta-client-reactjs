@@ -1,0 +1,23 @@
+/* Account receivable responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.account-receivable {
+
+		.btn {
+			font-size: $sm;
+			max-width: 200px;
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+
+	.account-receivable {
+
+		.btn {
+			font-size: $xs;
+			max-width: 185px;
+		}
+	}
+}

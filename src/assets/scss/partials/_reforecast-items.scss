@@ -1,0 +1,77 @@
+/* Reforecast items styles */
+
+.reforecast-items {
+
+	.item {
+		padding-bottom: 30px;
+		background-color: #EBEBEB;
+		margin-bottom: 30px;
+		max-width: 1400px;
+	}
+
+	.reforecast-items-table {
+
+		table {
+			table-layout: fixed;
+
+			th {
+
+				&:nth-child(1) {
+					width: 15%;
+				}
+
+				&:nth-child(2) {
+					width: 15%;
+				}
+
+				&:nth-child(3) {
+					width: 17%;
+				}
+
+				&:nth-child(4) {
+					width: 17%;
+				}
+
+				&:nth-child(5) {
+					width: 23%;
+				}
+
+				&:nth-child(6) {
+					width: 13%;
+				}
+			}
+
+			td {
+				font-size: $sm;
+
+				&:after {
+					content: attr(data-label);
+					display: none;
+					color: $color-gray-middle;
+					font-weight: 400;
+				}
+			}
+
+			th, td {
+				text-align: left;
+			}
+
+			.actions {
+				display: flex;
+
+				li {
+					margin-right: 10px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					.btn-simple {
+						color: $color-gray-middle;
+						font-size: $sm;
+					}
+				}
+			}
+		}
+	}
+}

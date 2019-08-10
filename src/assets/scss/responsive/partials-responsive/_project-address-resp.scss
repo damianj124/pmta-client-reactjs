@@ -1,0 +1,100 @@
+/* Project address responsive styles */
+
+@media  (max-width: 1400px) {
+
+	.project-address {
+
+		.select-box, .text-field {
+			flex-direction: column;
+			align-items: flex-start;
+
+			.label {
+				margin-bottom: 25px;
+				text-align: left;
+			}
+		}
+
+		.select-box {
+
+			&.secondary {
+
+				&.w-md, &.w-sm {
+
+					.Select {
+						max-width: none;
+					}
+				}
+			}
+
+			label {
+				width: 100%;
+			}
+		}
+
+		.text-field {
+
+			&.primary {
+
+				.content {
+					width: 85%;
+					max-width: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-lg) {
+
+	.project-address {
+
+		.box {
+			padding: 50px 20px;
+		}
+
+		.select-box.w-md {
+			width: 100%;
+		}
+
+		.project-details {
+
+			.select-box {
+
+				.css-10nd86i {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.project-address {
+
+		.box {
+			padding: 30px 20px;
+		}
+
+		.select-box, .text-field {
+
+			label, .label {
+				font-size: $xs;
+			}
+		}
+
+		.project-details .Select-value-label {
+			font-size: $xs;
+		}
+
+		.project-details {
+
+			.select-box.w-sm {
+
+				.css-10nd86i {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

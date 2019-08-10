@@ -1,0 +1,62 @@
+/* Cois responsive styles */
+
+@media (max-width: $screen-sm)  {
+
+	.cois {
+
+		.previous-cois {
+			margin-right: 0;
+
+			p {
+				margin-bottom: 15px;
+			}
+
+			.options {
+				flex-direction: column;
+
+				.select-box, .text-field {
+					max-width: none;
+				}
+			}
+
+			.data {
+				flex-direction: column;
+				width: 100%;
+
+				.select-box {
+					margin-right: 0;
+				}
+			}
+
+			.data, .options {
+
+				.select-box {
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+		.uploaded-cois-table {
+
+			table {
+
+				th {
+					display: none;
+				}
+
+				td {
+					display: flex;
+					flex-direction: column-reverse;
+					margin-bottom: 15px;
+					text-align: left;
+					font-size: $xs;
+
+					&:after {
+						content: attr(data-label);
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

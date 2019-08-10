@@ -1,0 +1,29 @@
+/* List styles */
+
+// Manage list
+
+.manage-list {
+
+	li {
+		padding-bottom: 15px;
+
+		.item {
+			font-family: $font-secondary;
+			font-size: $md;
+			padding-right: 40px;
+			color: $color-black;
+			text-transform: capitalize;
+		}
+	}
+}
+
+.action-list {
+
+	li {
+		color: $color-primary;
+		text-transform: capitalize;
+		font-family: $font-secondary;
+		font-size: $md;
+		padding: 10px 0;
+	}
+}

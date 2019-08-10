@@ -1,0 +1,51 @@
+/* User access */
+
+.user-access {
+
+	.items {
+		margin-top: 75px;
+		padding-left: 35px;
+
+		.item {
+			margin-bottom: 65px;
+			font-size: 25px;
+
+			.address {
+				color: $color-primary;
+				margin-bottom: 75px;
+				font-weight: normal;
+			}
+
+			.access-table {
+				max-width: 850px;
+
+				table {
+					table-layout: fixed;
+
+					th {
+
+						&:nth-child(1) {
+							width: 30%;
+						}
+
+						&:nth-child(2) {
+							width: 49%;
+						}
+
+						&:nth-child(3) {
+							width: 21%;
+						}
+					}
+
+					td {
+						padding: 5px 35px 5px 0;
+					}
+				}
+
+				.add {
+					font-size: $md;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+/* Select responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.select-box {
+
+		.Select-control > *:last-child {
+			padding-right: 20px;
+		}
+
+		&.no-outline {
+
+			.css-vj8t7z .css-xp4uvy, .css-1492t68  {
+				font-size: $sm;
+			}
+		}
+	}
+}

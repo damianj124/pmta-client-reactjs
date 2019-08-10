@@ -1,0 +1,14 @@
+/* List responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.manage-list {
+
+		li {
+
+			.item {
+				font-size: $sm;
+			}
+		}
+	}
+}

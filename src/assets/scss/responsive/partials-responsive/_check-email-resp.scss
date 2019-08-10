@@ -1,0 +1,148 @@
+/* Check email responsive styles */
+
+@media (max-width: 1675px) and (min-width: 1325px) {
+
+	.check-email {
+
+		.block, .slick-slider {
+			max-width: 850px;
+		}
+	}
+}
+
+@media (max-width: 1325px) and (min-width: $screen-md) {
+
+	.check-email {
+
+		.block, .slick-slider {
+			max-width: 625px;
+		}
+
+		.slider-primary {
+
+			.slick-next, .slick-prev {
+				top: -53px;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+
+	.check-email {
+
+		.slider-content {
+
+			.email-section, .manage-email textarea {
+				margin-bottom: 50px;
+			}
+		}
+
+		.cois-email {
+			padding: 50px 0;
+		}
+
+		.manage-section {
+			flex-direction: column;
+
+			.btn {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 870px) {
+
+	.check-email {
+
+		.block {
+
+			.receipt-number {
+				position: relative;
+				right: 0;
+			}
+		}
+
+		.slider-primary {
+
+			.slick-next, .slick-prev {
+				top: -60px;
+			}
+
+			.slick-next {
+				left: 275px;
+			}
+
+			.slick-prev {
+				left: 190px;
+			}
+		}
+
+		.email-section, .manage-email textarea {
+			margin-top: 40px;
+		}
+
+		.manage-section {
+			margin-top: 40px;
+		}
+	}
+}
+
+
+@media (max-width: 580px) {
+
+	.check-email {
+
+		.email-section {
+			padding: 25px;
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.check-email {
+
+		.email-subject {
+			margin-top: 35px;
+		}
+
+		.subtitle {
+			padding-top: 45px;
+		}
+
+		.block {
+
+			.tenant {
+				font-weight: 300;
+
+				.add-contact {
+					display: block;
+					margin-left: 0;
+					margin-top: 15px;
+				}
+			}
+		}
+
+		.text-field {
+
+			&.outline {
+
+				input {
+					font-size: $sm;
+					line-height: 50px;
+					height: 50px;
+				}
+			}
+		}
+
+		.slider-primary {
+
+			.slick-next {
+				left: 245px;
+			}
+		}
+	}
+}

@@ -1,0 +1,230 @@
+/* View invoice resp styles */
+
+@media (max-width: 1600px) {
+
+	.view-invoice {
+
+		.doc-file {
+			max-width: unset;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+
+		.doc-info {
+			flex-direction: column-reverse;
+
+			.doc-details {
+				width: 100%;
+				max-height: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+
+	.view-invoice {
+
+		.doc-info {
+
+			.doc-details {
+
+				.details {
+
+					li {
+
+						&.flex, .select-box {
+							flex-direction: column;
+							align-items: flex-start;
+
+							.label {
+								margin: 20px 0;
+							}
+						}
+					}
+
+					.price {
+						padding-top: 25px;
+						padding-left: 0;
+					}
+
+					.gl-info {
+						flex-direction: column;
+
+						.half-width {
+							width: 100%;
+						}
+					}
+
+					.text-field {
+
+						&.w-sm {
+			/*				max-width: none;
+							width: 100%;*/
+
+							.content {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.select-box {
+			margin-bottom: 25px;
+
+			&.w-md {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/*
+@media (min-width: 910px) and (max-width: $screen-md) {
+
+	.view-invoice {
+
+		.doc-info {
+
+			.doc-details {
+				width: 50%;
+
+				.info-text {
+					font-size: $sm;
+				}
+
+				.details {
+
+					li {
+
+						label, .label {
+							min-width: inherit;
+							margin-bottom: 25px;
+						}
+					}
+
+					.text-field, .select-box {
+						flex-direction: column;
+						align-items: flex-start;
+					}
+				}
+
+				.text-field {
+
+					.currency {
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+*/
+
+@media (max-width: 910px) {
+
+	.view-invoice {
+
+		.doc-info {
+			flex-direction: column;
+
+			.doc-details, .doc-file {
+				max-width: none;
+				width: 100%;
+			}
+
+			.doc-details {
+				padding-right: 0;
+
+				.details {
+
+					li {
+
+						.select-box {
+
+							.Select {
+								max-width: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+
+	.view-invoice {
+
+		.doc-info {
+
+			.doc-file {
+
+				.page-number {
+					font-size: 16px;
+					text-align: left;
+				}
+			}
+
+			.doc-details {
+
+				.info-text {
+					font-size: $sm;
+					padding-top: 25px;
+					margin-bottom: 35px;
+				}
+
+				.details {
+
+					li {
+
+						label, .label {
+							min-width: inherit;
+							margin-bottom: 20px;
+						}
+					}
+
+					.text-field, .select-box {
+						flex-direction: column;
+						align-items: flex-start;
+					}
+				}
+
+				.text-field {
+
+					.currency {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+
+		.slider-secondary {
+
+			.slick-next, .slick-prev {
+				top: -52px;
+			}
+
+			.slick-prev {
+				left: 157px;
+			}
+
+			.slick-next {
+				left: 180px;
+			}
+		}
+
+		.buttons {
+			padding-top: 35px;
+
+			.btn {
+				display: block;
+				max-width: none;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

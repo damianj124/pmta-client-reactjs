@@ -1,0 +1,19 @@
+/* Comcast page styles */
+
+.comcast {
+
+	.date {
+		font-size: $md;
+		color: $color-black;
+		font-family: $font-avenir-next-regular;
+	}
+
+	.doc-file {
+		max-width: 670px;
+
+		.file {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

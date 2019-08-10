@@ -1,0 +1,52 @@
+/* New campaign */
+
+.new-campaign {
+
+	.items {
+		padding-top: 70px;
+
+		.item {
+			margin-bottom: 50px;
+
+			.label {
+				margin-bottom: 40px;
+				font-size: $md;
+				font-family: $font-secondary;
+				color: $color-black;
+				position: relative;
+				display: inline-block;
+
+				.number {
+					background-color: $color-primary;
+					width: 40px;
+					height: 41px;
+					min-width: 40px;
+					border-radius: 50%;
+					display: inline-block;
+					text-align: center;
+					line-height: 41px;
+					color: #ffffff;
+					margin-right: 20px;
+				}
+
+				.sign {
+					color: $color-text;
+					position: absolute;
+					top: -4px;
+					right: -12px;
+					font-size: $xxs;
+				}
+			}
+		}
+	}
+
+	.date-range {
+		padding-left: 65px;
+		margin-bottom: 115px;
+
+		.custom {
+			min-width: 105px;
+			display: inline-block;
+		}
+	}
+}

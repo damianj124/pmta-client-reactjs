@@ -1,0 +1,61 @@
+/* Switch */
+
+.switch {
+	position: relative;
+	width: 125px;
+	user-select: none;
+	display: inline-block;
+
+	.switch-checkbox {
+		display: none;
+	}
+
+	.switch-label {
+		display: block;
+		overflow: hidden;
+		cursor: pointer;
+		border-radius: 8px;
+	}
+
+	.switch-inner {
+		display: block; width: 200%; margin-left: -100%;
+		transition: margin $trns-duration ease-in 0s;
+	}
+
+	.switch-inner:before, .switch-inner:after {
+		display: block;
+		float: left;
+		width: 50%;
+		height: 35px;
+		padding: 0;
+		line-height: 35px;
+		font-size: $sm;
+		text-align: center;
+	}
+
+	.switch-inner{
+
+		&:before {
+			content: "ON";
+			background-color: $color-primary;
+			color: $color-black;
+		}
+	}
+
+	.switch-inner {
+
+		&:after {
+			content: "OFF";
+			background-color: $color-black;
+			color: #ffffff;
+		}
+	}
+
+	.switch-checkbox:checked + .switch-label .switch-inner {
+		margin-left: 0;
+	}
+
+	.switch-checkbox:checked + .switch-label {
+		right: 0;
+	}
+}

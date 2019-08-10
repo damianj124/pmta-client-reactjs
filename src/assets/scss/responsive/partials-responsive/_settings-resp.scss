@@ -1,0 +1,28 @@
+/* Settings responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.settings {
+
+		li {
+
+			a {
+				font-size: $lg;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.settings {
+
+		li {
+
+			a {
+				font-size: $sm;
+				padding: 10px 0;
+			}
+		}
+	}
+}

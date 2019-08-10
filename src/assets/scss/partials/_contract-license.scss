@@ -1,0 +1,62 @@
+/* Contract license */
+
+.contract-license {
+
+	h4 {
+		font-family: $font-secondary;
+		color: $color-black;
+		padding-top: 25px;
+		font-weight: 300;
+	}
+
+	.box {
+		padding: 150px 40px 15px 70px;
+	}
+
+	.text-field {
+		justify-content: flex-end;
+
+		label {
+			font-family: $font-avenir-medium!important;
+		}
+
+		.content {
+			max-width: 435px;
+
+			input {
+				border-radius: $radius-md;
+			}
+		}
+	}
+
+	.help {
+		margin-right: 70px;
+		font-size: $xxs;
+		color: $color-gray;
+		font-family: $font-avenir-medium;
+
+		a {
+			color: $color-primary;
+		}
+	}
+
+	.continue-section {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-top: 85px;
+	}
+
+	.continue {
+		letter-spacing: 1.7px;
+		color: $color-black!important;
+		font-family: $font-secondary;
+	}
+
+	.icon {
+
+		i {
+			font-size: $xs;
+		}
+	}
+}

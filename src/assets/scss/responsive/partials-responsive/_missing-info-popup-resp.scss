@@ -1,0 +1,12 @@
+/* Missing info popup responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.missing-info {
+
+		.notice-section {
+			font-size: $sm;
+			padding-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,150 @@
+/* Aside styles */
+
+aside {
+	width: 375px;
+	height: 100%;
+	min-height: 100vh;
+	box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.5);
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: $trns-duration;
+	z-index: 1;
+
+	.nav {
+		padding-top: 75px;
+
+		li {
+
+			a {
+				display: flex;
+				align-items: center;
+				padding: 13px 15px;
+
+				.item-name {
+					text-transform: uppercase;
+					color: $color-black;
+					white-space: nowrap;
+				}
+
+				.item-icon {
+					text-align: center;
+					width: 40px;
+					height: 40px;
+					min-width: 40px;
+					border-radius: 50%;
+					background-color: $color-secondary;
+					margin-right: 30px;
+					transition: $trns-duration;
+
+					&.custom {
+						background-color: #ffffff;
+
+						i {
+							color: $color-black;
+							font-size: $md;
+						}
+					}
+
+					i {
+						color: #ffffff;
+						font-size: 20px;
+						line-height: 40px;
+					}
+				}
+
+				&.active, &:hover {
+
+					.item-icon {
+						background-color: $color-primary;
+
+						&.custom {
+							opacity: 0.5;
+							background-color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.manage-view {
+		margin-top: 75px;
+		padding-left: 15px;
+		display: flex;
+		align-items: center;
+
+		.btn-simple {
+			margin-right: 45px;
+
+			.icon {
+				font-size: $md;
+			}
+		}
+
+		.item-name {
+			color: $color-black;
+			font-family: $font-avenir-next-regular;
+			font-size: $md;
+		}
+	}
+
+	&.view-min {
+		width: 80px;
+
+		.manage-view {
+			justify-content: center;
+			padding-left: 0;
+
+			.btn-simple {
+				margin-right: 0;
+				padding-left: 0;
+			}
+
+			.item-name {
+				display: none;
+			}
+		}
+
+		.nav {
+
+			li {
+
+				a {
+					justify-content: center;
+
+					.item-name {
+						display: none;
+					}
+
+					.item-icon {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&.show {
+		display: block;
+	}
+}
+
+.menu-icon {
+	font-size: $sm;
+	color: $color-black;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	display: none;
+	cursor: pointer;
+	z-index: 2;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

@@ -1,0 +1,12 @@
+/* Box styles */
+
+.box {
+	margin-top: 100px;
+	background-color: #ffffff;
+	max-width: 1045px;
+	border: 1px dashed transparent;
+
+	&.bordered {
+		border-color: $color-primary;
+	}
+}

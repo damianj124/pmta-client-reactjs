@@ -1,0 +1,80 @@
+/* Popup responsive styles */
+
+@media (max-width: 1065px) {
+
+	.popup {
+		padding: 115px 45px 45px 45px;
+	}
+}
+
+@media (max-width: $screen-md) {
+
+	.popup {
+
+		.popup-heading {
+			padding-bottom: 35px;
+		}
+
+		.buttons {
+			margin-top: 25px;
+
+			.btn {
+				max-width: none;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.popup {
+
+		.popup-heading, .tenant-name {
+			font-size: $lg;
+		}
+
+		.tenant-name, .form-fields {
+			padding-left: 0;
+		}
+
+		.text-field, .select-box {
+			flex-direction: column;
+			align-items: flex-start;
+
+			.content, .Select-control {
+				max-width: none;
+			}
+
+			label {
+				margin-bottom: 16px!important;
+				padding-right: 0!important;
+				font-size: $sm!important;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+
+	.popup {
+		padding: 55px 15px 15px 15px;
+
+		.close {
+			font-size: $md;
+			top: 15px;
+			left: 15px;
+		}
+
+		.notice-section {
+
+			p {
+				text-align: left;
+			}
+		}
+
+		.tenant-name, .form-fields {
+			padding-left: 0;
+		}
+	}
+}

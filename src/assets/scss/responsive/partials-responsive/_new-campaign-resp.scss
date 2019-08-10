@@ -1,0 +1,50 @@
+/* New campaign responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.new-campaign {
+
+		.items {
+			padding-top: 40px;
+		}
+	}
+}
+
+@media (max-width: 590px) {
+
+	.new-campaign {
+
+		.items {
+			padding-top: 40px;
+
+			.item {
+
+				.label {
+					margin-right: 15px;
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+
+	.new-campaign {
+
+		.items {
+
+			.item {
+
+				.label {
+					font-size: $xs;
+				}
+			}
+		}
+
+		.date-range {
+			padding-left: 35px;
+			margin-bottom: 35px;
+		}
+	}
+}

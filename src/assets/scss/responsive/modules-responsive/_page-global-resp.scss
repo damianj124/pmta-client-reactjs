@@ -1,0 +1,51 @@
+/* Page global responsive styles */
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+
+	.page-content {
+		padding: 0 50px;
+	}
+}
+
+@media (max-width: $screen-md) {
+
+	.page-content {
+		margin: 35px 0;
+
+		.page-title {
+			margin-bottom: 35px;
+		}
+
+		.page-icon {
+
+			i {
+				font-size: 50px;
+			}
+		}
+
+		.block-title {
+			font-size: $sm;
+		}
+	}
+
+	.section-title {
+		margin-bottom: 35px;
+	}
+
+	.section-desc {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.page-content {
+
+		.block-warning {
+
+			.text-warning {
+				font-size: $xs;
+			}
+		}
+	}
+}

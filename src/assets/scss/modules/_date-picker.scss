@@ -1,0 +1,56 @@
+/* Datepicker */
+
+.date-picker {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	&.primary {
+
+		.DateInput {
+			width: 100%;
+		}
+
+		.DateInput_input {
+			color: $color-black;
+			font-family: $font-avenir-oblique;
+			border-bottom: none;
+			border: 1px solid transparent;
+			border-radius: $radius-md;
+			transition: $trns-duration;
+			padding: 16px 11px 13px;
+		}
+
+		.DateInput_input__focused {
+			border-color: $color-primary;
+		}
+
+		.SingleDatePickerInput__withBorder {
+			border-color: transparent;
+		}
+	}
+
+	&.invalid {
+
+		.DateInput_input {
+			border-color: $color-warning;
+		}
+
+		.error-text {
+			color: $color-warning;
+			position: absolute;
+			font-size: $xxs;
+			font-style: italic;
+			bottom: -30px;
+		}
+
+		&.relative {
+
+			.error-text {
+				position: relative;
+				top: 0;
+				margin: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+/* Fonts */
+
+// Avenir next condensed - medium
+
+@include font-face('avenir/avenir-next-condensed-medium/avenir-next-condensed-medium', 'Avenir Next Condensed Medium', normal, 500);
+
+// Avenir book
+
+@include font-face('avenir/avenir-book/avenir-book', 'Avenir Book', normal, 400);
+
+// Avenir book oblique
+
+@include font-face('avenir/avenir-book-oblique/avenir-book-oblique', 'Avenir Book Oblique', normal, 400);
+
+// Avenir light
+
+@include font-face('avenir/avenir-book/avenir-book', 'Avenir Light', normal, 400);
+
+// Avenir ultra light
+
+@include font-face('avenir/avenir-next-ultra-light-italic/avenir-next-ultra-light-italic', 'Avenir Ultra Light', normal, normal);
+
+// Avenir next condensed light
+
+@include font-face('avenir/avenir-condensed-light/avenir-condensed-light', 'Avenir Condensed Light', normal, normal);
+
+// Avenir next regular
+
+@include font-face('avenir/avenir-next-condensed-regular/avenir-next-condensed-regular', 'Avenir Next Condensed Regular', normal, normal);
+
+// Avenir medium
+
+@include font-face('avenir/avenir-medium/avenir-medium', 'Avenir Medium', normal, normal);
+
+// Avenir roman
+
+@include font-face('avenir/avenir-roman/avenir-roman', 'Avenir Roman', normal, normal);
+
+// Din bold
+
+@include font-face('din/din-regular/din-condensed-regular', 'Din Regular', normal, normal);
+
+// Din bold
+
+@include font-face('din/din-bold/din-condensed-bold', 'Din Bold', normal, normal);
+
+// Bradley hand bold
+
+@include font-face('bradley-hand/bradley-hand-bold/bradley-hand-bold', 'Bradley Hand Bold', normal, normal);
+
+// Helvetica regular
+
+@include font-face('helvetica/helvetica-regular/helvetica-regular', 'Helvetica', normal, normal);

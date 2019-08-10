@@ -1,0 +1,23 @@
+/* File upload responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.file-upload-primary {
+		height: 300px;
+
+		.drag-text {
+			font-size: $sm;
+
+			.icon-pdf {
+				font-size: 58px;
+			}
+		}
+	}
+
+	.file-upload-secondary {
+
+		.drag-text {
+			font-size: $sm;
+		}
+	}
+}

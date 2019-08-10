@@ -1,0 +1,20 @@
+/* Custom animation */
+
+[data-aos="scan-animation"] {
+	top: 0;
+	transition-property: top;
+
+	&.aos-animate {
+		top: 100%;
+	}
+}
+
+[data-aos="pressed-button"] {
+	top: -7px;
+	box-shadow: 0 16px 27px 0 rgba(0,0,0,0.6);
+
+	&.aos-animate {
+		top: 5px;
+		box-shadow: 0 6px 8px -3px rgba(0, 0, 0, 0.5);
+	}
+}

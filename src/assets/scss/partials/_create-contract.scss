@@ -1,0 +1,27 @@
+/* Create contract */
+
+.create-contract {
+
+	h2 {
+		margin-bottom: 55px;
+	}
+
+	.contract-types {
+		margin-bottom: 70px;
+
+		li {
+
+			a {
+				font-family: $font-secondary;
+				font-size: $lg;
+				color: #8F8F8F;
+				padding: 10px 0;
+				display: inline-block;
+			}
+		}
+	}
+
+	.add {
+		font-size: $md;
+	}
+}

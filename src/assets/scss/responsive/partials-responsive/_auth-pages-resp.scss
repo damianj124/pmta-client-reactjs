@@ -1,0 +1,41 @@
+/* Responsive styles of auth pages */
+
+@media (max-width: $screen-md) {
+
+	.auth-pages {
+
+		.auth-content {
+			padding-top: 80px;
+
+			.auth-title {
+				font-size: $xxl;
+			}
+
+			.auth-subtitle {
+				margin-bottom: 40px;
+			}
+
+			form {
+				margin-left: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.submit {
+				flex-direction: column;
+				width: 100%;
+				align-items: center;
+
+				.btn {
+					margin-left: 0;
+				}
+			}
+
+			.info-text {
+				margin-left: 0;
+				font-size: $sm;
+			}
+		}
+	}
+}

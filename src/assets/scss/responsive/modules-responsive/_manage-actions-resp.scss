@@ -1,0 +1,8 @@
+/* Manage actions' responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.action-primary {
+		font-size: $xl;
+	}
+}

@@ -1,0 +1,164 @@
+/* Floats */
+
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+
+    // Alignment
+
+    .float-#{$key}-left {
+      float: left;
+    }
+    .float#{$key}-right {
+      float: right;
+    }
+  }
+}
+
+// Fixes
+
+.clear-after {
+  @include clear-after;
+}
+
+// Flexbox
+
+.flex {
+  display: flex;
+}
+
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+
+    // Directions
+
+    .dir-#{$key}-row {
+      flex-direction: row;
+    }
+
+    .dir-#{$key}-column {
+      flex-direction: column;
+    }
+
+    // Alignment
+
+    .justify-#{$key}-center {
+      justify-content: center;
+    }
+
+    .justify-#{$key}-start {
+      justify-content: flex-start;
+    }
+
+    .justify-#{$key}-end {
+      justify-content: flex-end;
+    }
+
+    .justify-#{$key}-between {
+      justify-content: space-between;
+    }
+
+    .justify-#{$key}-around {
+      justify-content: space-around;
+    }
+
+    .align-#{$key}-stretch {
+      align-items: stretch;
+    }
+
+    .align-#{$key}-center {
+      align-items: center;
+    }
+
+    .align-#{$key}-start {
+      align-items: flex-start;
+    }
+
+    .align-#{$key}-end {
+      align-items: flex-end;
+    }
+
+    .content-#{$key}-center {
+      align-content: center;
+    }
+
+    .content-#{$key}-start {
+      align-content: flex-start;
+    }
+
+    .content-#{$key}-end {
+      align-content: flex-end;
+    }
+
+    .content-#{$key}-between {
+      align-content: space-between;
+    }
+  }
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-start {
+  align-content: flex-start;
+}
+
+.content-end {
+  align-content: flex-end;
+}
+
+.content-between {
+  align-content: space-between;
+}
+
+// Display
+
+.inline-block {
+  display: inline-block;
+}
+
+.error-text {
+  color: $color-warning;
+  font-style: italic;
+  font-size: $xxs;
+}

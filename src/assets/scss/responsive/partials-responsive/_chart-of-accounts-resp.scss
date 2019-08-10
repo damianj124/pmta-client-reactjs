@@ -1,0 +1,41 @@
+/* Charts of accounts */
+
+@media (max-width: $screen-sm) {
+
+	.chart-of-accounts {
+
+		.items {
+
+			.item {
+
+				.gl-info {
+
+					li {
+						flex-direction: column;
+						align-items: flex-start;
+
+						span {
+							padding-bottom: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+
+	.chart-of-accounts {
+
+		.items {
+
+			.item {
+
+				.accounts {
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}

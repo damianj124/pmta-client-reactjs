@@ -1,0 +1,64 @@
+/* Vendor contracts styles */
+
+.vendor-contracts {
+
+	.contracts-table {
+		margin-top: 120px;
+
+		table {
+			table-layout: fixed;
+
+			th {
+
+				&:nth-child(1) {
+					width: 25%;
+				}
+
+				&:nth-child(2) {
+					width: 16%;
+				}
+
+				&:nth-child(3) {
+					width: 16%;
+				}
+
+				&:nth-child(4) {
+					width: 25%;
+				}
+
+				&:nth-child(5) {
+					width: 18%;
+				}
+			}
+
+			th, td {
+				text-align: left;
+				padding: 5px 7px;
+			}
+
+			th {
+				font-size: $lg;
+				padding: 0 8px 70px 8px;
+			}
+
+			td {
+
+				&:after {
+					content: attr(data-label);
+					font-size: $lg;
+					font-family: $font-primary;
+					font-weight: 600;
+					display: none;
+				}
+			}
+
+			.action-secondary {
+				font-size: $md!important;
+			}
+
+			.remove {
+				color: $color-warning;
+			}
+		}
+	}
+}

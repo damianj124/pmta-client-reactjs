@@ -1,0 +1,106 @@
+// Paths
+
+$fonts-folder: "../fonts";
+$images-folder: '../img/';
+
+// Font families
+
+$font-primary: "Avenir Next Condensed Medium", serif;
+$font-secondary: "Avenir Book", serif;
+$font-tertiary: "Avenir Light", serif;
+$font-avenir-oblique: "Avenir Book Oblique", serif;
+$font-avenir-ultra-light: "Avenir Ultra Light", serif;
+$font-avenir-condensed-light: "Avenir Condensed Light", serif;
+$font-avenir-next-regular: "Avenir Next Condensed Regular", serif;
+$font-avenir-roman: "Avenir Roman", serif;
+$font-avenir-medium: "Avenir Medium", serif;
+$font-din-regular: "Din Regular", serif;
+$font-din-bold: "Din Bold", serif;
+$font-bradley-hand-bold: "Bradley Hand Bold";
+$font-helvetica: 'Helvetica', serif;
+$font-icons: "Icomoon Pmt";
+
+// Descriptive Base Colors
+
+$color-green: #00E3A1 !default;
+$color-green-light: #50E3C2 !default;
+$color-purple: #9302EC !default;
+$color-purple-light: #BD10E0 !default;
+$color-purple-light-9: rgba($color-purple-light, 0.09) !default;
+$color-gray-light: #D8D8D8 !default;
+$color-gray-middle: #ABABAB !default;
+$color-gray: #878787 !default;
+$color-gray-dark: #696969 !default;
+$color-black: #333333 !default;
+$color-black-60: rgba($color-black, 0.6) !default;
+$color-red-light: #E35050 !default;
+$color-red: #FE0000 !default;
+$color-red-dark: #D0021B !default;
+$color-pink: #E00056 !default;
+$color-yellow: #FAFFC0 !default;
+$color-green: #CAFFC0 !default;
+$color-white-smoke: #F6F6F6 !default;
+$color-disable: #cecece;
+
+// Color palette
+
+$color-primary: $color-green !default;
+$color-secondary: $color-purple !default;
+$color-tertiary: $color-black !default;
+$color-text: $color-gray !default;
+$color-warning: $color-red !default;
+$color-warning-light: $color-red-light !default;
+$color-cancel-popup: $color-pink !default;
+$color-cancel: $color-gray-dark;
+$color-body: $color-white-smoke !default;
+$color-border: $color-gray !default;
+
+$main-colors: (
+		primary: $color-primary, secondary: $color-secondary, tertiary: $color-tertiary, text: $color-text, warning: $color-warning,
+		cancel: $color-cancel, cancel-popup: $color-cancel-popup, grey: $color-gray, dark-grey: $color-gray-dark, black: $color-black, white: $color-white-smoke, purple-light: $color-purple-light,
+		color-green-light: $color-green-light
+) !default;
+
+// Font-sizes
+
+$xxs: 12px; $xs: 14px;  $sm: 18px;  $md: 22px;  $lg: 24px;  $xl: 26px; $xxl: 30px; $xxxl: 34px; // Text font sizes
+$h-xs: 14px; $h-sm: 16px; $h-md: 18px; $h-lg: 20px; $h-xl: 22px; $h-xxl: 30px; // Heading font sizes
+
+$base-font-size: $sm !default; // Base text size
+
+$text-font-sizes: (
+		xxs: $xxs, xs: $xs, sm: $sm, md: $md, lg: $lg, xl: $xl, xxl: $xxl, xxxl: $xxxl
+) !default;
+
+$heading-font-sizes: (
+		h6: $h-xs, h5: $h-sm, h4: $h-md, h3: $h-lg, h2: $h-xl, h1: $h-xxl
+) !default;
+
+// Border Radius
+
+$radius-default: 4px;
+$radius-md: 8px;
+$radius-lg: 10px;
+$radius-rounded: 50%;
+$radius-none: 0;
+
+// Transitions
+
+$trns-duration-sm: .2s;
+$trns-duration: .3s;
+$trns-duration-lg: .4s;
+$trns-delay: 50ms;
+
+// Container
+
+$cont-width: 1490px;
+$cont-sm-width: 1110px;
+$cont-padding: 30px;
+
+// Resolutions
+
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$screen-xxs: 360px;

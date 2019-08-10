@@ -1,0 +1,41 @@
+/* Cois warning resp */
+
+@media only screen and (max-width: $screen-lg) {
+
+	.cois-warning {
+
+		.block-warning {
+			margin: 50px 0 0 0;
+		}
+
+		.warning-content {
+			padding-top: 70px;
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-md) {
+
+	.cois-warning {
+
+		.warning-content {
+
+			.warning-header {
+				flex-direction: column;
+				align-items: flex-start;
+
+				.title {
+					margin-bottom: 15px;
+					font-size: $md;
+				}
+			}
+
+			.list-warning {
+
+				li {
+					font-size: $sm;
+				}
+			}
+		}
+	}
+}

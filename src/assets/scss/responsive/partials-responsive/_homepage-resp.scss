@@ -1,0 +1,394 @@
+/* Homepage responsive styles */
+
+@media (max-width: $screen-lg) {
+
+	.homepage {
+
+		.intro {
+			background-color: #ffffff;
+
+			.intro-content {
+				padding: 0 15px;
+
+				.intro-slogan {
+					font-size: 36px;
+				}
+
+				.intro-title {
+					margin-top: 10px;
+				}
+
+				.intro-desc {
+					font-size: $sm;
+					margin-right: 0;
+					margin-bottom: 50px;
+				}
+			}
+		}
+
+		.invoice-intro {
+
+			.invoice-demo {
+
+				.demo {
+					flex-direction: column-reverse;
+					align-items: center;
+
+					.items-left {
+
+						.item {
+							justify-content: flex-start;
+						}
+					}
+
+					.items-right {
+						margin-bottom: 42px;
+					}
+
+					.lines-img {
+						margin-left: 0;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+@media (max-width: $screen-md) {
+
+	.homepage {
+
+		.intro {
+			flex-direction: column;
+
+			.intro-content {
+
+				.intro-title {
+					font-size: $xxs;
+					letter-spacing: 1px;
+				}
+
+				.intro-slogan {
+					margin-bottom: 40px;
+				}
+			}
+		}
+
+		.accounts-intro {
+
+			.account-content {
+				flex-direction: column;
+
+				.section-desc {
+					margin-right: 0;
+				}
+
+				.btn {
+					margin-top: 50px;
+					white-space: pre-wrap;
+					max-width: 200px;
+					line-height: 1.2;
+				}
+			}
+
+			.email-intro {
+				max-width: 700px;
+			}
+		}
+
+		.space {
+			display: none;
+		}
+
+		.cois-intro {
+			background-color: #ffffff;
+
+			.cois-content {
+				flex-direction: column;
+
+				.section-desc {
+					max-width: none;
+					text-align: center;
+					margin-left: 30px;
+					margin-right: 30px;
+				}
+
+				.img {
+					margin-top: 50px;
+				}
+			}
+		}
+
+		.contracts-intro {
+			padding: 130px 0 50px 0;
+
+			.contracts-content {
+
+				.license-content {
+
+					.license-number {
+						font-size: $xxl;
+					}
+				}
+			}
+
+			.schedule {
+				margin-top: 150px;
+				padding-top: 50px;
+
+				.btn {
+					height: 58px;
+					line-height: 58px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.homepage {
+
+		.intro {
+
+			.intro-content {
+
+				.intro-slogan {
+					max-width: 300px;
+				}
+
+				.intro-title {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.invoice-intro {
+			padding-top: 0;
+			padding-bottom: 0;
+			background-color: #ffffff;
+
+			.invoice-slogan, .invoice-desc {
+				display: none;
+			}
+
+			.invoice-demo {
+				margin-top: 0;
+				padding: 15px;
+
+				.section-title {
+					display: none;
+
+					&.short {
+						display: block;
+					}
+				}
+
+				.section-desc {
+					display: block;
+				}
+
+				.demo {
+
+					.items-left {
+
+						.gl-account {
+							align-items: flex-end;
+							justify-content: space-between;
+							padding: 0 20px;
+
+							.select-box {
+								flex-direction: column;
+								align-items: flex-start;
+								min-width: 150px;
+
+								.label {
+									font-size: $xxs;
+									text-align: left;
+									padding-bottom: 0;
+								}
+							}
+						}
+
+						.approval {
+
+							.select-box {
+								flex-direction: row;
+
+								.label {
+									padding-bottom: 0;
+								}
+							}
+						}
+
+						.charges {
+							padding: 5px;
+						}
+					}
+
+					.lines-img {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.accounts-intro {
+			padding-bottom: 300px;
+			padding-top: 70px;
+
+			.email-intro {
+				padding: 20px;
+				font-size: $sm;
+				max-width: 320px;
+				bottom: -100px;
+
+				p {
+					margin-bottom: 25px;
+				}
+
+				.item-list {
+
+					li {
+						font-size: $sm;
+
+						.label {
+							min-width: unset;
+						}
+					}
+				}
+			}
+		}
+
+		.cois-intro {
+			padding: 170px 0 70px 0;
+		}
+
+		.contracts-intro {
+
+			.contracts-content {
+				flex-direction: column-reverse;
+				margin-right: 0;
+
+				.section-desc {
+					margin-bottom: 25px;
+				}
+
+				.license-content {
+					margin-right: 0;
+
+					.license-number {
+						text-align: center;
+
+						.license-label {
+							display: none;
+						}
+					}
+
+					.license-info {
+						justify-content: center;
+
+						.check {
+							width: 34px;
+							height: 34px;
+							min-width: 34px;
+							margin-left: 180px;
+
+							.icon-check {
+								line-height: 30px;
+								font-size: 20px;
+							}
+						}
+
+						.message {
+							font-size: $xxl;
+							color: $color-green-light;
+							margin-bottom: 0;
+						}
+
+						.valid-date {
+							font-size: $xs;
+							color: $color-gray-dark;
+						}
+
+						.details {
+							position: absolute;
+							top: 190px;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+
+	.homepage {
+
+		.intro {
+
+			.img {
+				overflow: hidden;
+				max-height: 200px;
+
+				&:before, &:after {
+					display: block;
+				}
+
+				img {
+					position: relative;
+					top: -50px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xxs) {
+
+	.homepage {
+
+		.intro {
+
+			.img {
+				max-height: 180px;
+			}
+		}
+
+		.invoice-intro {
+
+			.invoice-demo {
+
+				.demo {
+
+					.items-left {
+						padding: 0;
+
+						.gl-account {
+							flex-direction: column;
+
+							.select-box {
+								flex-direction: column;
+								align-items: flex-start;
+								min-width: unset;
+								width: 100%;
+								margin-bottom: 10px;
+							}
+						}
+					}
+
+					.charges {
+
+						p {
+							font-size: $xxs;
+						}
+					}
+				}
+			}
+		}
+	}
+}

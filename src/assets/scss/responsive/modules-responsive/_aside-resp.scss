@@ -1,0 +1,33 @@
+/* Aside responsive */
+
+@media (max-width: 1700px) {
+
+	aside {
+		margin-right: 50px;
+	}
+}
+
+@media (max-width: $screen-lg) {
+
+	aside {
+		width: 300px;
+	}
+}
+
+@media (max-width: $screen-md) {
+
+	aside {
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+
+		&.display {
+			display: block;
+		}
+	}
+
+	.menu-icon {
+		display: inline-block;	}
+}

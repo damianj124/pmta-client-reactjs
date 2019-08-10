@@ -1,0 +1,37 @@
+/* License check */
+
+.license-check {
+
+	.box {
+		padding: 50px 40px 15px 70px;
+
+		.title {
+			font-weight: 300;
+			color: #717171;
+			font-family: $font-secondary;
+			margin-bottom: 65px;
+		}
+
+		.details {
+			font-family: $font-secondary;
+			font-size: $sm;
+			color: #000000;
+			text-transform: capitalize;
+
+			li {
+				padding: 4px 0;
+				display: flex;
+				align-items: center;
+			}
+
+			.label {
+				width: 225px;
+				padding-right: 25px;
+			}
+
+			.value, .label {
+				max-width: 100%;
+			}
+		}
+	}
+}

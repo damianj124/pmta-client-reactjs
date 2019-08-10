@@ -1,0 +1,29 @@
+/* License check responsive */
+
+@media (max-width: $screen-sm) {
+
+	.license-check {
+
+		.box {
+			padding: 50px 20px;
+
+			.title {
+				font-size: $sm;
+				margin-bottom: 35px;
+			}
+
+			.details {
+
+				li {
+					flex-direction: column;
+					align-items: flex-start;
+
+					.label {
+						font-style: italic;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+/* Logo responsive styles */
+
+/* Logo styles */
+
+@media (max-width: $screen-sm) {
+
+	.logo {
+
+		.logo-text {
+			color: $color-black;
+			font-family: $font-avenir-next-regular;
+			letter-spacing: 7px;
+
+			&.sm {
+				font-size: $xxl;
+			}
+
+			&.lg {
+				font-size: 50px;
+			}
+		}
+	}
+}

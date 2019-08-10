@@ -1,0 +1,25 @@
+/* Email settings responsive styles */
+
+@media (max-width: 1550px) {
+
+	.email-settings {
+		flex-direction: column;
+
+		span {
+			padding-bottom: 15px;
+		}
+
+		.value {
+			max-width: none;
+			padding-right: 0;
+			white-space: pre-wrap;
+		}
+	}
+}
+
+@media (max-width: $screen-sm)  {
+
+	.email-settings {
+		font-size: $md;
+	}
+}

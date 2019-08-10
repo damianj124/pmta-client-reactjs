@@ -1,0 +1,41 @@
+/* Email template responsive styles */
+
+@media  (max-width: $screen-sm) {
+
+	.email-template {
+
+		.templates {
+			margin-left: 5px;
+
+			.template {
+
+				.title {
+					font-size: $lg;
+				}
+			}
+		}
+	}
+}
+
+@media  (max-width: $screen-xs) {
+
+	.email-template {
+
+		.template {
+
+			.title {
+				margin-right: 15px;
+				white-space: pre-wrap;
+				font-size: $md;
+
+				&.custom {
+					font-size: 26px;
+				}
+			}
+		}
+
+		.add {
+			font-size: 26px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+/* Contract details responsive styles */
+
+@media (max-width: 1370px) and (min-width: $screen-sm) {
+
+	.contract-details {
+
+		.details {
+
+			.text-field {
+
+				.label {
+					width: 66%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-lg) {
+
+	.contract-details {
+
+		.box {
+			padding: 50px 20px;
+		}
+
+		.date-picker {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.text-field {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.date-picker, .text-field {
+
+			.label {
+				margin-bottom: 25px;
+			}
+		}
+
+		.details {
+			margin-bottom: 55px;
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.contract-details {
+
+		.date-picker, .text-field {
+
+			.label {
+				font-size: $xs;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,9 @@
+/* Add doc responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.add-approval-doc .block-title {
+		padding-top: 35px;
+		margin-bottom: 25px;
+	}
+}

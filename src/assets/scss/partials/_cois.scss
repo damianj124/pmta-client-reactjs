@@ -1,0 +1,51 @@
+/* Cois page styles */
+
+.cois {
+
+	.options {
+
+		.select-box {
+			width: 100%;
+			max-width: 200px;
+
+			.css-10nd86i {
+				width: 100%;
+			}
+		}
+	}
+
+	.uploaded-cois-table {
+
+		table {
+
+			td {
+
+				&:after {
+					content: attr(data-label);
+					color: $color-secondary;
+					font-size: $xs;
+					display: none;
+				}
+			}
+
+			th {
+
+				&:nth-child(1) {
+					width: 30%;
+				}
+
+				&:nth-child(2) {
+					width: 20%;
+				}
+
+				&:nth-child(3) {
+					width: 20%;
+				}
+
+				&:nth-child(4) {
+					width: 30%;
+				}
+			}
+		}
+	}
+}

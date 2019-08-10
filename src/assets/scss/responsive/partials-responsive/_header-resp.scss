@@ -1,0 +1,38 @@
+/* Header responsive styles */
+
+
+@media (max-width: $screen-sm) {
+
+	header {
+		padding: 15px 0;
+		border-color: #EDEDED;
+
+		.nav-items {
+			@include position(absolute,0,0,0,0);
+			background-color: rgba($color-green-light, 0.95);
+			flex-direction: column;
+			padding-top: 150px;
+			display: none;
+			height: 100vh;
+			min-height: 500px;
+
+			li {
+				display: block;
+				width: 100%;
+
+				a {
+					display: block;
+				}
+
+				&.outline {
+					margin-left: 0;
+					margin-top: 30px;
+				}
+			}
+		}
+
+		.hamburger-icon {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,109 @@
+/* Slider styles */
+
+// Slider primary type
+
+.slider-primary {
+
+	.slick-next, .slick-prev {
+		width: 71px;
+		height: 47px;
+		border-radius: $radius-md;
+		background-color: transparent;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+		position: absolute;
+		cursor: pointer;
+		transition: $trns-duration;
+		font-size: 0;
+
+		&:before {
+			color: #ffffff;
+			transition: $trns-duration;
+		}
+
+		&:hover {
+			opacity: 0.7;
+
+			&:before {
+				color: $color-gray-light;
+			}
+		}
+	}
+
+	.slick-prev {
+
+		&:before {
+			content: $icon-left-arrow-icon;
+			font-family: Icomoon-Pmt;
+		}
+	}
+
+	.slick-next {
+
+		&:before {
+			content: $icon-right-arrow-icon;
+			font-family: Icomoon-Pmt;
+		}
+	}
+}
+
+// Slider secondary type
+
+.slider-secondary {
+
+	.slick-next, .slick-prev {
+		font-size: 0;
+		background: none;
+		border: none;
+		position: absolute;
+
+		&:before {
+			color: $color-gray-middle;
+		}
+	}
+
+	.slick-prev {
+
+		&:before {
+			content: $icon-bordered-arrow-left;
+			font-family: Icomoon-Pmt;
+		}
+
+		&:hover {
+
+			&:before {
+				content: $icon-filled-arrow-left;
+			}
+		}
+	}
+
+	.slick-next {
+
+		&:before {
+			content: $icon-bordered-arrow-right;
+			font-family: Icomoon-Pmt;
+		}
+
+		&:hover {
+
+			&:before {
+				content: $icon-filled-arrow-right;
+			}
+		}
+	}
+}
+
+.slick-slider {
+
+	.css-bdjl4r {
+		display: none!important;
+	}
+}
+
+.react-slideshow-container .nav {
+	background: rgba(0,0,0, 0.5)!important;
+}
+
+.react-slideshow-container .nav:hover {
+	color: #ffffff!important;
+	opacity: 0.7;
+}

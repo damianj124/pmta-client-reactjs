@@ -1,0 +1,11 @@
+/* Tenant emails responsive styles */
+
+@media (max-width: $screen-lg) {
+
+	.tenant-emails {
+
+		.emails-table {
+			table-layout: fixed;
+		}
+	}
+}

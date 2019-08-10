@@ -1,0 +1,43 @@
+/* Cois uploaded responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.cois-uploaded {
+
+		.info-texts {
+			margin-top: 0;
+
+			.success-message {
+				font-size: $md;
+				margin-bottom: 35px;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.cois-uploaded {
+
+		.info-texts {
+			font-size: $sm;
+
+			.success-message {
+				font-size: $sm;
+			}
+
+			.buttons {
+				margin: 30px 0;
+
+				.btn {
+					max-width: none;
+					margin-bottom: 30px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

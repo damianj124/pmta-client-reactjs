@@ -1,0 +1,57 @@
+/* Invoice */
+
+.invoice {
+
+	.upload-form {
+		padding-top: 60px;
+	}
+
+	.text-field {
+		width: 100%;
+		max-width: 250px;
+
+		input {
+			padding-right: 45px!important;
+		}
+
+		&.icon {
+
+			i {
+				position: absolute;
+				right: 15px;
+				line-height: 55px;
+			}
+		}
+	}
+
+	.prev-invoices-table {
+
+		td {
+
+			&:after {
+				content: attr(data-label);
+				color: $color-secondary;
+				display: none;
+			}
+		}
+
+		th {
+
+			&:nth-child(1) {
+				width: 30%;
+			}
+
+			&:nth-child(2) {
+				width: 30%;
+			}
+
+			&:nth-child(3) {
+				width: 20%;
+			}
+
+			&:nth-child(4) {
+				width: 20%;
+			}
+		}
+	}
+}

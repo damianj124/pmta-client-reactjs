@@ -1,0 +1,34 @@
+/* Budget calendar responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.budget-calendar {
+
+		.items {
+			padding-top: 20px;
+			margin-left: 0;
+		}
+
+		.budget-calendar-table {
+
+			table {
+
+				th {
+					display: none;
+				}
+
+				td {
+					display: flex;
+					flex-direction: column-reverse;
+					margin-bottom: 15px;
+					text-align: left!important;
+
+					&:after {
+						content: attr(data-label);
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

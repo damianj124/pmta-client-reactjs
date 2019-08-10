@@ -1,0 +1,21 @@
+/* Checkbox elements' responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.checkbox {
+
+		&.axis {
+
+			.checkbox-label {
+				font-size: $xs;
+			}
+		}
+	}
+
+	.radio-buttons {
+
+		.main-label {
+			font-size: $sm;
+		}
+	}
+}

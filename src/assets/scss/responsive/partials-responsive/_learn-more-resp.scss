@@ -1,0 +1,221 @@
+/* Learn more page responsive styles */
+
+@media only screen and (max-width: $screen-lg) {
+
+	.learn-more {
+		padding-top: 150px;
+
+		.title {
+			font-size: 70px;
+		}
+
+		.desc {
+			font-size: $lg;
+		}
+
+		.demo {
+			padding-top: 130px;
+			padding-bottom: 130px;
+
+			.tabs {
+
+				li {
+					max-width: 235px;
+				}
+			}
+		}
+
+		.focus {
+			padding-bottom: 200px;
+
+			.content {
+				padding: 50px 140px 50px 60px;
+
+				.focus-title {
+					font-size: 40px;
+				}
+
+				.focus-desc {
+					font-size: $lg;
+				}
+			}
+
+			.focus-info {
+				font-size: $lg;
+				margin: 100px 15px;
+			}
+
+			.tabs {
+
+				li {
+					max-width: 300px;
+				}
+			}
+		}
+
+		.search {
+
+			.search-form {
+
+				span {
+					font-size: 32px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm) {
+
+	.learn-more {
+		padding-top: 74px;
+		padding-bottom: 74px;
+
+		.title {
+			font-size: 48px;
+		}
+
+		.desc {
+			font-size: $md;
+		}
+
+		.demo {
+			padding-top: 70px;
+
+			.tabs {
+
+				li {
+					max-width: 180px;
+				}
+			}
+		}
+
+		.search {
+
+			&::before {
+				height: 12px;
+			}
+
+			&::after {
+				height: 9px;
+			}
+
+			.search-form {
+
+				span {
+					font-size: 20px;
+					min-width: 132px;
+				}
+
+				.text-field input, .btn {
+					height: 38px;
+					line-height: 38px;
+					font-size: 15px;
+				}
+
+				.btn {
+					max-width: 76px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-xs) {
+
+	.learn-more {
+
+		.title {
+			font-size: 36px;
+		}
+
+		.desc {
+			letter-spacing: 0;
+			max-width: 250px;
+			margin-top: 6px;
+		}
+
+		.title, .desc {
+			text-align: left;
+		}
+
+		.demo {
+			padding-top: 47px;
+			padding-bottom: 80px;
+
+			.tabs {
+
+				li {
+					max-width: 107px;
+				}
+			}
+		}
+
+		.focus {
+			padding: 0 0 124px 0;
+
+			.content {
+				padding: 28px 40px 30px 40px;
+
+				.focus-title {
+					font-size: $xxl;
+				}
+
+				.focus-desc {
+					font-size: 16px;
+				}
+
+				.btn {
+					max-width: 103px;
+					font-size: 19px;
+					height: 29px;
+					line-height: 29px;
+				}
+			}
+
+			.focus-info {
+				margin: 34px 22px 43px 22px;
+				font-size: 20px;
+
+				p {
+					margin-bottom: 25px;
+				}
+			}
+
+			.tabs {
+
+				li {
+					max-width: 160px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-xs) {
+
+	.learn-more {
+
+		.focus {
+
+			.tabs {
+
+				li {
+					max-width: 140px;
+				}
+			}
+		}
+
+		.search {
+
+			.search-form {
+				flex-direction: column;
+				align-items: flex-start;
+
+				.text-field, .btn {
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+}

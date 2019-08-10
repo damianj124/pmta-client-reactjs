@@ -1,0 +1,153 @@
+/* Check elements */
+
+// Checkbox styles
+
+.checkbox {
+	cursor: pointer;
+	display: flex;
+
+	.check-icon {
+		top: 3px;
+		width: 28px;
+		min-width: 28px;
+		height: 28px;
+		position: relative;
+		background-color: #ffffff;
+		border: 1px solid transparent;
+
+		&::before {
+			content: ($icon-check);
+			font-family: $icomoon-font-family;
+			color: $color-primary;
+			position: absolute;
+			font-size: 15px;
+			display: block;
+			top: 5px;
+			left: 4px;
+			opacity: 0;
+			transition: $trns-duration;
+		}
+	}
+
+	.checkbox-label {
+		padding-left: 10px;
+		color: $color-black;
+		transition: $trns-duration;
+		line-height: 36px;
+		font-family: $font-avenir-next-regular;
+		font-size: $md;
+	}
+
+	input {
+		display: none;
+
+		&:checked {
+
+			& ~ .check-icon {
+				opacity: 1;
+				border-color: $color-primary;
+
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&.axis {
+
+		.check-icon {
+
+			&::before {
+				content: "X";
+				font-family: $font-avenir-medium;
+				font-weight: 900;
+				color: $color-black;
+				top: 4px;
+				left: 7px;
+			}
+		}
+
+		.checkbox-label {
+			font-family: $font-secondary;
+			font-size: $sm;
+		}
+
+		input {
+
+			&:checked {
+
+				& ~ .check-icon {
+					border-color: $color-black;
+				}
+			}
+		}
+	}
+}
+
+// Radio button styles
+
+.radio-buttons {
+
+	[type="radio"]:checked,
+	[type="radio"]:not(:checked) {
+		display: none;
+	}
+
+	[type="radio"]:checked + label,
+	[type="radio"]:not(:checked) + label {
+		position: relative;
+		padding-left: 45px;
+		cursor: pointer;
+		line-height: 28px;
+		display: inline-block;
+		color: $color-black;
+	}
+
+	[type="radio"]:checked + label:after,
+	[type="radio"]:not(:checked) + label:after {
+		content: '';
+		width: 10px;
+		height: 10px;
+		min-width: 10px;
+		position: absolute;
+		top: 10px;
+		left: 5px;
+		border-radius: 50%;
+		transition: $trns-duration;
+	}
+
+	[type="radio"]:checked + label:after {
+		background: $color-secondary;
+	}
+
+	[type="radio"]:not(:checked) + label:after {
+		background: $color-primary;
+	}
+
+	.main-label {
+		color: $color-black;
+		font-size: 26px;
+		font-family: $font-secondary;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		span {
+			padding-left: 35px;
+
+			&.custom {
+				padding-left: 15px;
+			}
+		}
+	}
+}
+
+.checkbox, .radio-buttons {
+	padding: 4px 0;
+}

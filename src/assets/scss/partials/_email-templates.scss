@@ -1,0 +1,58 @@
+/* Email templates */
+
+.email-template {
+
+	.template {
+		margin-bottom: 45px;
+
+		.title {
+			color: $color-primary;
+			margin-right: 50px;
+			@include text-overflow();
+			font-size: $xl;
+			margin-bottom: 45px;
+
+			&.custom {
+				font-size: $md;
+			}
+		}
+
+		.content {
+			margin-top: 45px;
+			color: $color-black;
+			font-family: $font-avenir-next-regular;
+			max-width: 650px;
+			padding-left: 25px;
+			line-height: 18px;
+		}
+	}
+
+	.add {
+		font-size: $md;
+		font-style: italic;
+
+		span {
+			font-style: normal;
+		}
+	}
+
+	.text-field {
+		margin-top: 45px;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 650px;
+		margin-left: 25px;
+
+		label {
+			margin-bottom: 25px;
+		}
+
+		textarea {
+			min-height: 240px;
+			padding: 15px;
+			color: $color-gray;
+			font-size: $xs;
+			font-family: $font-avenir-next-regular;
+		}
+	}
+}

@@ -1,0 +1,166 @@
+/* Button styles */
+
+.btn {
+	font-size: $lg;
+	height: 77px;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	white-space: nowrap;
+	transition: $trns-duration-sm;
+	width: 100%;
+	font-family: $font-primary;
+	padding: 0 15px;
+
+	// Filled buttons
+
+	&.filled {
+		border: 0;
+		color: #ffffff;
+		line-height: 77px;
+
+		@each $key,$val in $main-colors {
+			&.#{$key} {
+				background-color: #{$val};
+			}
+		}
+
+		&.icon {
+
+			i {
+				font-size: $xs;
+			}
+		}
+	}
+
+	// Outline buttons
+
+	&.outline {
+		line-height: 73px;
+		background-color: #fff;
+		border: 2px solid transparent;
+
+		@each $key,$val in $main-colors {
+			&.#{$key} {
+				border-color: #{$val};
+			}
+		}
+	}
+
+	// Link buttons
+
+	&.link {
+		border: 0;
+		line-height: 77px;
+		background-color: transparent;
+		text-decoration: underline;
+
+		@each $key,$val in $main-colors {
+			&.#{$key} {
+				color: #{$val};
+			}
+		}
+	}
+
+	&:hover {
+		text-decoration: none;
+		opacity: 0.7;
+	}
+
+	&[disabled], &.disabled {
+		border: 0;
+		pointer-events: none;
+		line-height: 77px;
+		color: rgba(#fff, 0.6);
+		background-color: $color-disable!important;
+	}
+
+	// Buttons sizes
+
+	&.w-xxxs {
+		max-width: 115px;
+	}
+
+	&.w-xxs {
+		max-width: 200px;
+	}
+
+	&.w-xs {
+		max-width: 210px;
+	}
+
+	&.w-sm {
+		max-width: 245px;
+	}
+
+	&.w-md {
+		max-width: 265px;
+	}
+
+	&.w-lg {
+		max-width: 315px;
+	}
+
+	&.w-xl {
+		max-width: 340px;
+	}
+
+	// Height sizes
+
+	&.h-sm {
+		height: 40px;
+
+		&.filled {
+			line-height: 40px;
+		}
+
+		&.outline {
+			line-height: 36px;
+		}
+	}
+
+	&.h-md {
+		height: 49px;
+
+		&.filled {
+			line-height: 49px;
+		}
+
+		&.outline {
+			line-height: 45px;
+		}
+	}
+
+	&.h-lg {
+		height: 55px;
+
+		&.filled {
+			line-height: 55px;
+		}
+
+		&.outline {
+			line-height: 51px;
+		}
+	}
+
+	&.radius-lg {
+		border-radius: $radius-lg;
+	}
+
+	&.shadow {
+		box-shadow: 0 12px 18px 0 rgba(0,0,0,0.5);
+	}
+}
+
+.btn-simple {
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: $trns-duration;
+	padding: 0;
+	display: inline-block;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

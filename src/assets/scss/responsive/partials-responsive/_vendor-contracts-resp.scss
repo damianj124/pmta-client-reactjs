@@ -1,0 +1,59 @@
+/* Responsive styles for vendor contracts page */
+
+@media (min-width: $screen-md) and (max-width: 1410px) {
+
+	.vendor-contracts {
+
+		.contracts-table {
+
+			table {
+
+				td, .action-secondary {
+					font-size: $sm!important;
+				}
+
+				th {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+
+	.vendor-contracts {
+
+		.contracts-table {
+			margin-top: 60px;
+
+			table {
+
+				th {
+					display: none;
+				}
+
+				td {
+					display: flex;
+					flex-direction: column-reverse;
+					margin-bottom: 25px;
+
+					&:after {
+						content: attr(data-label);
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 770px) and (max-width: $screen-md) {
+
+	.vendor-contracts {
+
+		.contracts-table {
+			max-width: 520px;
+		}
+	}
+}

@@ -1,0 +1,209 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?10r4qj');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?10r4qj#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?10r4qj') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?10r4qj') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?10r4qj##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hamburger {
+  &:before {
+    content: $icon-hamburger;
+  }
+}
+.icon-remove-circle {
+  &:before {
+    content: $icon-remove-circle;
+  }
+}
+.icon-add-circle {
+  &:before {
+    content: $icon-add-circle;
+  }
+}
+.icon-exclamation {
+  &:before {
+    content: $icon-exclamation;
+  }
+}
+.icon-cois {
+  &:before {
+    content: $icon-cois;
+  }
+}
+.icon-attachment {
+  &:before {
+    content: $icon-attachment;
+  }
+}
+.icon-send-email {
+  &:before {
+    content: $icon-send-email;
+  }
+}
+.icon-edit {
+  &:before {
+    content: $icon-edit;
+  }
+}
+.icon-file {
+  &:before {
+    content: $icon-file;
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check;
+  }
+}
+.icon-delete {
+  &:before {
+    content: $icon-delete;
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}
+.icon-calendar {
+  &:before {
+    content: $icon-calendar;
+  }
+}
+.icon-download {
+  &:before {
+    content: $icon-download;
+    color: #656565;
+  }
+}
+.icon-reforcast {
+  &:before {
+    content: $icon-reforcast;
+  }
+}
+.icon-filled-arrow-left {
+  &:before {
+    content: $icon-filled-arrow-left;
+  }
+}
+.icon-filled-arrow-left {
+  &:before {
+    content: $icon-filled-arrow-left;
+  }
+}
+.icon-filled-arrow-right {
+  &:before {
+    content: $icon-filled-arrow-right;
+  }
+}
+.icon-bordered-arrow-left {
+  &:before {
+    content: $icon-bordered-arrow-left;
+  }
+}
+.icon-bordered-arrow-right {
+  &:before {
+    content: $icon-bordered-arrow-right;
+  }
+}
+.icon-menu {
+  &:before {
+    content: $icon-menu;
+  }
+}
+.icon-right-arrow-icon {
+  &:before {
+    content: $icon-right-arrow-icon;
+  }
+}
+.icon-left-arrow-icon {
+  &:before {
+    content: $icon-left-arrow-icon;
+  }
+}
+.icon-info-icon-2 {
+  &:before {
+    content: $icon-info-icon-2;
+    color: #878787;
+  }
+}
+.icon-approval {
+  &:before {
+    content: $icon-approval;
+  }
+}
+.icon-account {
+  &:before {
+    content: $icon-account;
+  }
+}
+.icon-dashboard {
+  &:before {
+    content: $icon-dashboard;
+  }
+}
+.icon-invoice {
+  &:before {
+    content: $icon-invoice;
+  }
+}
+.icon-pdf .path1 {
+  &:before {
+    content: $icon-pdf-path1;
+  }
+}
+.icon-pdf .path2 {
+  &:before {
+    content: $icon-pdf-path2;
+    margin-left: -0.7060546875em;
+  }
+}
+.icon-pdf .path3 {
+  &:before {
+    content: $icon-pdf-path3;
+    margin-left: -0.7060546875em;
+  }
+}
+.icon-pdf .path4 {
+  &:before {
+    content: $icon-pdf-path4;
+    margin-left: -0.7060546875em;
+  }
+}
+.icon-pdf .path5 {
+  &:before {
+    content: $icon-pdf-path5;
+    margin-left: -0.7060546875em;
+  }
+}
+.icon-settings {
+  &:before {
+    content: $icon-settings;
+  }
+}
+.icon-vendor {
+  &:before {
+    content: $icon-vendor;
+  }
+}

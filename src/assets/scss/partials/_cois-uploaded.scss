@@ -1,0 +1,15 @@
+/* Cois uploaded page styles */
+
+.cois-uploaded {
+
+	.info-texts {
+		font-family: $font-avenir-next-regular;
+		color: $color-black;
+		font-size: $md;
+
+		.success-message {
+			font-size: $xxl;
+			margin-bottom: 85px;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+/* Pagination styles */
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	font-family: $font-secondary;
+
+	li {
+		color: $color-black;
+
+		 a {
+			 display: inline-block;
+			 padding: 5px 10px;
+		 }
+
+		&.disabled {
+			pointer-events: none;
+			opacity: 0.5;
+		}
+
+		&.active {
+			background-color: $color-primary;
+			color: #ffffff;
+		}
+	}
+}

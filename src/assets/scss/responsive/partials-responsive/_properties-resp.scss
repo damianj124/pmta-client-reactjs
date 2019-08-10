@@ -1,0 +1,42 @@
+/* Properties responsive design */
+
+@media (max-width: $screen-sm) {
+
+	.properties {
+
+		.properties-list {
+			margin-bottom: 45px;
+
+			li {
+
+				a {
+					font-size: $md;
+				}
+			}
+		}
+
+		.add {
+			font-size: $lg;
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+
+	.properties {
+
+		.properties-list {
+
+			li {
+
+				a {
+					font-size: $sm;
+				}
+			}
+		}
+
+		.add {
+			font-size: $sm;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+/* Settings */
+
+.settings {
+
+	li {
+
+		a {
+			font-family: $font-secondary;
+			text-transform: capitalize;
+			font-size: $lg;
+			color: $color-black;
+			padding: 15px 0;
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+/* Cois warning styles */
+
+.cois-warning {
+
+	.block-warning {
+		width: 100%;
+		max-width: 600px;
+		margin-bottom: 115px;
+		margin-left: 15px;
+	}
+
+	.warning-content {
+		padding-top: 120px;
+		max-width: 1200px;
+		margin-left: 15px;
+
+		.warning-header {
+
+			.title {
+				font-size: $xxl;
+				color: $color-black;
+			}
+		}
+
+		.list-warning {
+			margin-top: 50px;
+
+			li {
+				padding: 5px 0;
+				color: $color-gray-dark;
+				font-size: $md;
+
+				.icon-exclamation {
+					color: $color-warning-light;
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+}
+

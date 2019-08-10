@@ -1,0 +1,28 @@
+/* Sign PDF styles */
+
+.pdfViewer {
+
+	.page {
+
+		canvas {
+			width: 816px!important;
+		}
+	}
+
+	.text-field, .date {
+		position: absolute!important;
+		top: 170px!important;
+		z-index: 1;
+		font-weight: bold;
+	}
+
+	.text-field {
+		width: 300px;
+		left: 70px!important;
+	}
+
+	.date {
+		right: 161px!important;
+		color: $color-primary;
+	}
+}

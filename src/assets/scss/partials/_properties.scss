@@ -1,0 +1,23 @@
+/* Properties */
+
+.properties {
+
+	.properties-list {
+		padding-top: 10px;
+		margin-bottom: 85px;
+
+		li {
+
+			a {
+				color: $color-primary;
+				font-size: $md;
+				padding: 8px 0;
+				display: inline-block;
+			}
+		}
+	}
+
+	.add {
+		font-size: $sm;
+	}
+}

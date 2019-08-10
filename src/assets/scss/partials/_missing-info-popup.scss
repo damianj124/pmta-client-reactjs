@@ -1,0 +1,30 @@
+/* Missing info required info popup */
+
+.missing-info {
+
+	.notice-section {
+		font-family: $font-avenir-next-regular;
+		font-size: $md;
+		padding-bottom: 20px;
+
+		.notice-text {
+			color: #ffffff;
+			margin-bottom: 15px;
+		}
+
+		p {
+			text-align: right;
+		}
+	}
+
+	.tenant-name {
+		padding-left: 90px;
+	}
+
+	.btn {
+
+		&.link {
+			text-decoration: inherit;
+		}
+	}
+}

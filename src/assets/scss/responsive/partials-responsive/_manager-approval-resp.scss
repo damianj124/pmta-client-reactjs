@@ -1,0 +1,29 @@
+/* Manager approval responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.manager-approval {
+
+		.items {
+			margin-top: 70px;
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.manager-approval {
+
+		.managers-table {
+
+			table {
+
+				td {
+					text-align: left;
+					padding-right: 0;
+					padding-bottom: 15px;
+				}
+			}
+		}
+	}
+}

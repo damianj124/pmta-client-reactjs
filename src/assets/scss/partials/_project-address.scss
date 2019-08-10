@@ -1,0 +1,45 @@
+/* Project address */
+
+.project-address {
+
+	.box {
+		padding: 130px 60px 50px 150px ;
+	}
+
+	.project-details {
+		max-width: 815px;
+
+
+		li {
+			padding: 25px 0;
+			flex-direction: column;
+		}
+
+		.select-box, li {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.label, .Select-value-label, .Select-input, label {
+			font-size: $sm;
+			font-family: $font-secondary;
+			color: $color-black;
+			text-transform: capitalize;
+		}
+
+		.label {
+			width: 100%;
+		}
+
+		.text-field {
+			justify-content: flex-start;
+		}
+
+		.select-box.w-sm {
+
+			.css-10nd86i {
+				width: 55%;
+			}
+		}
+	}
+}

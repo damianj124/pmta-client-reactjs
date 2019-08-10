@@ -1,0 +1,30 @@
+/* View approval doc */
+
+.view-approval-doc {
+
+	.doc-content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.doc-actions {
+		width: 42%;
+		max-width: 500px;
+	}
+
+	.block-title {
+		padding-top: 60px;
+	}
+
+	.doc-file {
+		width: 44%;
+		max-width: 525px;
+		margin-top: 25px;
+		padding-left: 25px;
+
+		.file {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

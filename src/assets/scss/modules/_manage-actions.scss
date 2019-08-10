@@ -1,0 +1,49 @@
+/* Manage actions' styles */
+
+.action-primary {
+	font-size: $xxl;
+	font-family: $font-avenir-ultra-light;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.action-secondary {
+	font-family: $font-avenir-oblique;
+	font-size: 18px;
+	color: $color-black;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.action-tertiary {
+	font-family: $font-secondary;
+	font-size: 25px;
+	color: $color-black;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.action-popup {
+	font-family: $font-avenir-next-regular;
+	font-size: $xl;
+	font-style: italic;
+	text-decoration: underline;
+	color: #A0A0A0;
+}
+
+.add {
+	font-family: $font-secondary;
+	color: $color-gray-middle;
+	display: inline-block;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

@@ -1,0 +1,30 @@
+/* Chart of accounts styles */
+
+.chart-of-accounts {
+
+	.items {
+		max-width: 800px;
+
+		.item {
+			padding-bottom: 50px;
+
+			.gl-info {
+
+				li {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 5px 0;
+
+					&:nth-child(odd) {
+						color: black;
+					}
+
+					&:nth-child(even) {
+						color: $color-gray;
+					}
+				}
+			}
+		}
+	}
+}

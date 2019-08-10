@@ -1,0 +1,21 @@
+/* Email settings */
+
+.email-settings {
+	margin-top: 95px;
+	display: flex;
+	font-size: $xl;
+	margin-bottom: 15px;
+
+	.label {
+		color: $color-primary;
+		text-transform: lowercase;
+		padding-right: 10px;
+	}
+
+	.value {
+		padding-right: 95px;
+		font-family: $font-avenir-next-regular;
+		max-width: 60%;
+		@include text-overflow();
+	}
+}

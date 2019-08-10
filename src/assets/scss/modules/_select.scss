@@ -1,0 +1,216 @@
+/* Select styles */
+
+.select-box {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	.css-vj8t7z, .css-1hwfws3 {
+		min-height: 55px;
+	}
+
+	.css-2o5izw {
+		border-color: $color-primary!important;
+		box-shadow: 0 0 0 1px $color-primary!important;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.Select {
+		width: 100%;
+	}
+
+	.Select-input {
+		height: 52px;
+		line-height: 52px;
+	}
+
+	.Select-control {
+		height: 52px;
+		border: 1px solid transparent;
+		border-radius: 0;
+	}
+
+	.Select-placeholder, .Select-clear {
+		display: none;
+	}
+
+	.Select-arrow {
+		border-color: #000000 transparent transparent;
+		border-width: 8px 9px 2.5px;
+		border-radius: 4px;
+	}
+
+	.Select.is-open > .Select-control .Select-arrow {
+		border-color: transparent transparent #000000;
+		border-width: 0 9px 8px;
+	}
+
+	.Select-menu-outer {
+		border-color: transparent;
+	}
+
+	.Select-placeholder, .Select--single > .Select-control .Select-value {
+		color: $color-black;
+	}
+
+	.Select.is-focused:not(.is-open) > .Select-control {
+		box-shadow: none;
+		border-color: transparent;
+	}
+
+	.Select.is-open > .Select-control {
+		border-color: transparent;
+	}
+
+	.Select-placeholder, .Select--single > .Select-control .Select-value {
+		line-height: 52px;
+	}
+
+	.Select-control > *:last-child {
+		padding-right: 40px;
+	}
+
+	.Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
+		padding-right: 58px;
+	}
+
+	&.primary {
+
+		label {
+			color: white;
+			font-size: $md;
+			font-family: $font-tertiary;
+			padding-right: 100px;
+		}
+	}
+
+	&.secondary {
+
+		.css-10nd86i, .Select-control, .Select.is-focused > .Select-control {
+			background: #B7B7B7;
+		}
+
+		.Select-control {
+			height: 70px;
+			line-height: 63px;
+		}
+
+		.Select-placeholder, .Select--single > .Select-control .Select-value {
+			line-height: 70px;
+		}
+
+		.Select-arrow, .Select.is-open > .Select-control .Select-arrow {
+			border: 3px solid black;
+			width: 40px;
+			height: 40px;
+			line-height: 35px;
+			border-radius: $radius-rounded;
+			text-align: center;
+			display: block;
+			position: relative;
+		}
+
+		.Select-arrow {
+
+			&:after {
+				content: '';
+				border: solid black;
+				border-width: 0 3px 3px 0;
+				display: inline-block;
+				padding: 5px;
+				transform: rotate(45deg);
+				position: absolute;
+				top: 8px;
+				left: 11px;
+			}
+		}
+
+		.Select.is-open > .Select-control .Select-arrow {
+			&:after {
+				transform: rotate(-135deg);
+				top: 14px
+			}
+		}
+
+		.Select.is-open .Select-arrow, .Select .Select-arrow-zone:hover > .Select-arrow {
+			border-top-color: #000000;
+		}
+
+		.Select-control > *:last-child {
+			padding-right: 15px;
+		}
+
+		&.w-md {
+
+			.Select {
+				max-width: 398px;
+			}
+
+			.Select-placeholder, .Select--single > .Select-control .Select-value {
+				padding-right: 60px!important;
+			}
+		}
+
+		&.w-sm {
+
+			.Select {
+				max-width: 140px;
+			}
+
+			.Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
+				padding-right: 54px!important;
+			}
+		}
+	}
+
+	&.no-outline {
+
+		.css-vj8t7z {
+			border-color: transparent;
+
+			.css-xp4uvy {
+				color: $color-primary;
+				font-size: $md;
+			}
+
+			.css-1492t68 {
+				color: $color-black;
+				font-family: $font-secondary;
+			}
+		}
+	}
+
+	&.no-bg {
+
+		.css-vj8t7z {
+			background-color: transparent;
+		}
+	}
+
+	&.invalid, &.disabled {
+
+		.Select-control {
+			border-color: $color-warning;
+		}
+
+		.error-text {
+			color: $color-warning;
+			position: absolute;
+			bottom: -20px;
+			font-size: $xxs;
+			font-style: italic;
+		}
+	}
+
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.9;
+	}
+
+	&.w-md {
+		width: 70%;
+	}
+}

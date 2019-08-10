@@ -1,0 +1,83 @@
+/* Website tab styles */
+
+.tabs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	li {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-family: $font-avenir-next-regular;
+		font-size: 28px;
+		margin-right: 6px;
+		text-wrap: none;
+		position: relative;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			background-color: #ABEDDA;
+			color: #626262;
+			padding: 23px 5px;
+			display: block;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				border-left: 19px solid transparent;
+				border-right: 19px solid transparent;
+				border-top: 26px solid  #6AECC6;
+				@include XAlign();
+				bottom: -15px;
+				display: none;
+			}
+
+			&.active {
+				background-color: #6AECC6;
+
+				&::after {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.tab-items {
+	margin-top: 60px;
+
+	.tab-item {
+		display: none;
+
+		.img {
+			width: 100%;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.tab-title {
+			font-size: 28px;
+			font-family: $font-primary;
+			font-weight: bold;
+			color: #6AECC6;
+		}
+
+		.tab-desc {
+			color: $color-black;
+			font-family: $font-avenir-next-regular;
+			font-size: 20px;
+		}
+
+		&.active {
+			display: flex;
+		}
+	}
+}

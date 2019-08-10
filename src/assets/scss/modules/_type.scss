@@ -1,0 +1,54 @@
+/* Typography */
+
+/* Simple text sizes */
+
+@each $key,$val in $text-font-sizes {
+	.font-#{$key} {
+		font-size: #{$val};
+	}
+}
+
+/* Heading sizes */
+
+@each $key,$val in $heading-font-sizes {
+	#{$key}, .#{$key} {
+		font-size: #{$val};
+	}
+}
+
+/* Text colors */
+
+@each $key,$val in $main-colors {
+	.color-#{$key} {
+		color: #{$val};
+	}
+}
+
+/* Text decorations */
+
+.underline {
+	text-decoration: underline;
+}
+
+.no-underline {
+	text-decoration: none!important;
+}
+
+/* Font styles */
+
+.italic {
+	font-style: italic;
+}
+
+/* Font weights */
+
+.w-700 {
+	font-weight: 700;
+}
+
+.w-900 {
+	font-weight: 900;
+}
+
+
+

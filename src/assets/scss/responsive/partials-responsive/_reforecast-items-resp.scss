@@ -1,0 +1,39 @@
+/* Reforecast items responsive styles */
+
+@media screen and (max-width: 1550px) {
+
+	.reforecast-items {
+
+		.table-tertiary {
+
+			table {
+				margin-top: 50px;
+
+				th {
+					display: none;
+				}
+
+				td {
+					display: flex;
+					flex-direction: column-reverse;
+					margin-bottom: 15px;
+					text-align: left!important;
+
+					&:after {
+						content: attr(data-label);
+						display: block;
+					}
+				}
+			}
+
+			.actions {
+
+				li {
+					.btn-simple {
+						color: $color-gray;
+					}
+				}
+			}
+		}
+	}
+}

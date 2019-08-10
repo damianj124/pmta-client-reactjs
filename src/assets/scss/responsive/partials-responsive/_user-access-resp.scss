@@ -1,0 +1,40 @@
+/* User access responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.user-access {
+
+		.items {
+			padding-left: 0;
+
+			.item {
+
+				.address {
+					margin-bottom: 35px;
+				}
+
+				.access-table {
+
+					table {
+
+						td {
+							padding-bottom: 15px;
+							padding-right: 0;
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+
+	.user-access {
+
+		.add {
+			font-size: $xs;
+		}
+	}
+}

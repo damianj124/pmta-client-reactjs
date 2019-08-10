@@ -1,0 +1,78 @@
+/* Contract license responsive */
+
+@media (max-width: 1500px) {
+
+	.contract-license {
+
+		.box {
+			padding-top: 50px;
+			padding-left: 40px;
+		}
+	}
+}
+
+@media (min-width: 1380px) and (max-width: 1500px) {
+
+	.contract-license {
+
+		.text-field {
+
+			label {
+				font-size: $md!important;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-lg) and (max-width: 1380px) {
+
+	.contract-license {
+
+		.text-field {
+
+			label {
+				font-size: 20px!important;
+			}
+		}
+	}
+}
+
+
+@media (max-width: $screen-lg) {
+
+	.contract-license {
+
+		.box {
+			padding: 50px 20px;
+		}
+
+		.text-field {
+			flex-direction: column;
+
+			label {
+				font-size: $sm!important;
+				margin-bottom: 15px;
+				padding-right: 0!important;
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.contract-license {
+
+		.continue-section {
+			flex-direction: column;
+			margin-top: 45px;
+
+			.help {
+				margin-bottom: 25px;
+				text-align: center;
+				margin-right: 0;
+			}
+		}
+	}
+}

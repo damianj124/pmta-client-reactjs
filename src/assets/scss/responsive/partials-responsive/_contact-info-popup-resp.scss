@@ -1,0 +1,22 @@
+/* Contact info popup responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.contact-info-popup {
+
+		.manage-tenant {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.tenant-name {
+			padding-left: 0;
+			font-size: $md;
+		}
+
+		.action-popup {
+			margin-left: 0;
+			font-size: $sm;
+		}
+	}
+}

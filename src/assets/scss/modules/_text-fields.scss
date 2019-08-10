@@ -1,0 +1,184 @@
+/* Text field styles */
+
+.text-field {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	input {
+		height: 55px;
+		line-height: 55px;
+		padding: 0 15px;
+	}
+
+	textarea {
+		resize: none;
+		padding: 15px;
+	}
+
+	input, textarea {
+		border: 1px solid transparent;
+		width: 100%;
+		font-size: $sm;
+		font-family: $font-primary;
+		transition: $trns-duration;
+		position: relative;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	&.primary {
+
+		input, textarea {
+			background-color: #ffffff;
+			font-family: $font-avenir-oblique;
+			color: $color-black;
+
+			&:focus {
+				border-color: $color-primary;
+				opacity: 1;
+			}
+
+			&::placeholder {
+				color: #8B8B8B;
+				font-family: $font-avenir-oblique;
+			}
+
+			&:focus-within {
+				background-color: #ffffff;
+			}
+		}
+
+		label {
+
+			&.black {
+				color: $color-black;
+				font-size: 26px;
+				font-family: $font-secondary;
+				padding-right: 25px;
+			}
+
+			&.white {
+				color: white;
+				font-size: $md;
+				font-family: $font-tertiary;
+				padding-right: 100px;
+			}
+		}
+
+		&.grey {
+
+			input, textarea {
+				background-color: $color-gray-light;
+
+				&:focus {
+					border-color: $color-tertiary;
+				}
+			}
+		}
+
+		.content {
+			width: 100%;
+		}
+	}
+
+	&.no-bg {
+
+		input, textarea {
+			background-color: transparent;
+
+			&::placeholder {
+				color: $color-black;
+			}
+		}
+	}
+
+	&.grey {
+
+		input, textarea {
+			background-color: $color-gray-light;
+
+			&:focus {
+				border-color: $color-tertiary;
+			}
+		}
+	}
+
+	.error-text {
+		color: $color-warning;
+		position: absolute;
+		font-size: $xxs;
+		font-style: italic;
+		bottom: -15px;
+		backface-visibility: hidden;
+
+		&.relative {
+			position: relative;
+			top: 0;
+			margin-top: 15px;
+		}
+	}
+
+
+	&.outline {
+
+		input {
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid;
+			border-color: $color-border;
+			font-size: $xl;
+			color: $color-black;
+			font-family: $font-secondary;
+			height: 90px;
+			line-height: 90px;
+
+			&::placeholder {
+				color: $color-primary;
+			}
+
+			&:focus {
+				border-color: $color-black;
+			}
+		}
+	}
+
+	&.invalid {
+
+		input, textarea {
+			border-color: $color-warning!important;
+		}
+	}
+
+	&.icon {
+
+		input {
+			padding: 0 15px 0 55px;
+		}
+
+		.input-icon {
+			position: absolute;
+			left: 33px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&.no-padding {
+
+		input, textarea {
+			padding-left: 0!important;
+		}
+	}
+
+	&.no-margin {
+		margin-bottom: 0!important;
+	}
+
+	&.w-sm {
+		max-width: 170px;
+	}
+}

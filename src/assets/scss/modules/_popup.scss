@@ -1,0 +1,97 @@
+/* Pop up styles */
+
+// Layer background
+
+.styles_overlay__CLSq- {
+	background: $color-black-60;
+	display: block;
+}
+
+// Background color
+
+.styles_modal__gNwvD {
+	background: transparent;
+	max-width: 1020px;
+	margin: 0 auto;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+// X button
+
+.styles_closeButton__20ID4 {
+	display: none;
+}
+
+// Popup width styles
+
+.styles_modal__gNwvD {
+	width: 100%;
+	box-shadow: none;
+}
+
+// Pop up general styles
+
+.popup {
+	background: $color-black;
+	width: 100%;
+	position: relative;
+	padding: 120px 85px 100px 100px;
+
+	.popup-heading {
+		font-size: $xxl;
+		text-transform: capitalize;
+		line-height: 50px;
+		margin-bottom: 80px;
+
+
+		&.white {
+			color: #ffffff;
+		}
+
+		&.red {
+			color: $color-red;
+		}
+	}
+
+	.tenant-name {
+		font-size: $xxl;
+		color: $color-primary;
+	}
+
+	.text-field, .select-box {
+
+		label {
+			width: 340px;
+		}
+
+		.content {
+			max-width: 375px;
+		}
+	}
+
+	// Select styles
+
+	.Select-control, .Select-menu-outer {
+		max-width: 375px;
+	}
+
+	// Custom close button design
+
+	.close {
+		position: absolute;
+		color: #ffffff;
+		font-size: 50px;
+		font-family: $font-avenir-medium;
+		top: 40px;
+		left: 40px;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

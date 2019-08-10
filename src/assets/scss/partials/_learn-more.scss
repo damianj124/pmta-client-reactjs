@@ -1,0 +1,205 @@
+/* Learn more page styles */
+
+.learn-more {
+	background-color: #ffffff;
+	padding: 246px 0 147px 0;
+
+	.title {
+		font-family: $font-din-bold;
+		font-size: 120px;
+		color: $color-black;
+	}
+
+	.desc {
+		font-family: $font-avenir-next-regular;
+		font-size: $xxl;
+		color: #626262;
+		margin-top: 14px;
+		letter-spacing: 3px;
+	}
+
+	.demo {
+		padding: 274px 15px 224px 15px;
+		max-width: 918px;
+		margin: 0 auto;
+
+		.tabs {
+
+			li {
+				max-width: 302px;
+			}
+		}
+
+		.tab-items {
+
+			#accounts-tab {
+
+				.img {
+					max-width: 537px;
+					max-height: 379px;
+					margin-right: 60px;
+				}
+
+				.tab-desc {
+					max-width: 435px;
+					margin-top: 32px;
+				}
+			}
+
+			#cois-tab {
+
+				.img {
+					max-width: 469px;
+					max-height: 405px;
+					margin-right: 94px;
+				}
+
+				.tab-desc {
+					margin-top: 30px;
+					max-width: 335px;
+				}
+			}
+
+			#contracts-tab {
+
+				.img {
+					max-width: 473px;
+					max-height: 436px;
+					margin-right: 111px;
+				}
+
+				.tab-title {
+					margin-top: 62px;
+				}
+
+				.tab-desc {
+					max-width: 325px;
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+
+	.focus {
+		max-width: 1356px;
+		margin: 0 auto;
+		padding: 0 15px 346px 15px;
+		color: $color-black;
+
+		.content {
+			background-color: #ABEDDA;
+			padding: 67px 163px 54px 140px;
+
+			.focus-title {
+				font-family: $font-din-bold;
+				font-size: 56px;
+				margin-bottom: 30px;
+			}
+
+			.focus-desc {
+				font-size: $xxl;
+				font-family: $font-avenir-next-regular;
+				letter-spacing: 0.3px;
+				margin-bottom: 28px;
+			}
+
+			.btn {
+				background-color: #6AECC6;
+				height: 59px;
+				line-height: 59px;
+				box-shadow: 0 2px 4px rgba(#000000, 0.5);
+				font-size: 42px;
+			}
+		}
+
+		.focus-info {
+			font-size: $xxl;
+			letter-spacing: 0.3px;
+			max-width: 670px;
+			margin: 142px 25px 150px 25px
+		}
+
+		.tabs {
+			margin-bottom: 72px;
+
+			li {
+				max-width: 453px;
+			}
+		}
+
+		.tab-items {
+			max-width: 912px;
+			margin: 0 auto;
+
+			#invoice-tab {
+
+				.img {
+					max-width: 450px;
+					max-height: 334px;
+					margin-right: 111px;
+				}
+
+				.tab-desc {
+					margin-top: 18px;
+					max-width: 291px;
+				}
+			}
+		}
+	}
+
+	.search {
+		background-color: $color-black;
+
+		&::before, &::after {
+			content: '';
+			display: block;
+		}
+
+		&::before {
+			height: 37px;
+			background-color: #ABEDDA;
+		}
+
+		&::after {
+			height: 23px;
+			background-color: #E7E7E7;
+		}
+
+		.search-form {
+			padding: 46px 0;
+			font-family: $font-primary;
+
+			span {
+				font-size: 50px;
+				color: #ffffff;
+				margin-right: 16px;
+				min-width: 240px;
+			}
+
+			.text-field {
+				width: 100%;
+				max-width: 657px;
+
+				input {
+					height: 64px;
+					line-height: 64px;
+					font-size: 28px;
+					font-family: $font-primary;
+
+					&::placeholder {
+						font-family: $font-primary;
+					}
+				}
+			}
+
+			.btn {
+				max-width: 137px;
+				height: 64px;
+				line-height: 64px;
+				background-color: #6AECC6;
+				font-size: 37px;
+				font-family: $font-primary;
+			}
+		}
+	}
+}

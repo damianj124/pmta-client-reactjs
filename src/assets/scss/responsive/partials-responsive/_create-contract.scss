@@ -1,0 +1,22 @@
+/* Create contract responsive styles */
+
+@media (max-width: $screen-md) {
+
+	.create-contract {
+
+		h2 {
+			margin-bottom: 40px;
+		}
+
+		.contract-types {
+			margin-bottom: 40px;
+
+			li {
+
+				a {
+					font-size: $sm;
+				}
+			}
+		}
+	}
+}

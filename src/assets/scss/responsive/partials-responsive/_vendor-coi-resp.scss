@@ -1,0 +1,73 @@
+/* Vendor COI pages' responsive styles */
+
+// Vendor category responsive styles
+
+@media (max-width: $screen-lg) {
+
+	.vendor-category {
+
+		.category {
+			margin: 50px 0;
+
+			.holders {
+				font-size: $md;
+			}
+
+			.category-name {
+				font-size: $sm;
+			}
+
+			.info-text {
+				font-size: $sm;
+			}
+
+			.category-list {
+				margin: 0;
+				padding: 0;
+
+				li {
+					flex-direction: column;
+				}
+
+				.label {
+					font-size: $sm;
+				}
+			}
+
+			.text-field {
+				max-width: none;
+				min-width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.vendor-coi {
+
+		.vendor-select {
+			margin-top: 25px;
+
+			.select-box {
+				align-items: flex-start;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+
+	.vendor-coi {
+
+		.vendor-select {
+
+			.select-box {
+
+				.label {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

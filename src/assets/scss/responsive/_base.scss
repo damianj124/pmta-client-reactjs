@@ -1,0 +1,77 @@
+/* Base responsive */
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+
+  .main {
+    padding-left: 300px;
+  }
+}
+
+@media  (max-width: $screen-md) {
+
+  .main {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: round($h-xxl / 1.3);
+  }
+
+  h2 {
+    font-size: round($h-xl / 1.3);
+  }
+
+  h3 {
+    font-size: round($h-lg / 1.3);
+  }
+
+  h4 {
+    font-size: round($h-md / 1.2);
+  }
+
+  h5 {
+    font-size: round($h-sm / 1.2);
+  }
+
+  h6 {
+    font-size: round($h-xs / 1.2);
+  }
+}
+
+@media  (max-width: $screen-sm) {
+
+  /* Headings */
+  
+  h1 {
+    font-size: round($h-xxl / 1.7);
+    line-height: 31px;
+  }
+
+  h2 {
+    font-size: round($h-xl / 1.7);
+  }
+
+  h3 {
+    font-size: round($h-lg / 1.5);
+  }
+
+  h4 {
+    font-size: round($h-md / 1.5);
+  }
+
+  main {
+    margin-top: 71px;
+  }
+}
+
+@media (max-width: $screen-xs) {
+
+  /* Global widths */
+
+  .half-width {
+    max-width: none;
+    width: 100%;
+  }
+}
+

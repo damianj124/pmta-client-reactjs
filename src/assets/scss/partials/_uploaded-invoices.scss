@@ -1,0 +1,39 @@
+/* Uploaded invoices */
+
+.uploaded-invoices {
+
+	.box {
+		padding: 35px 0 30px 30px;
+		max-width: none;
+	}
+
+	.items {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+
+		.item {
+			max-width: 167px;
+			margin: 0 50px;
+			text-align: right;
+			padding-bottom: 30px;
+
+			.numbering {
+				color: $color-black;
+				margin-bottom: 15px;
+			}
+
+			.file {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.icon-pdf {
+		font-size: 51px;
+		color: $color-black;
+		margin-right: 33px;
+		padding-left: 50px;
+	}
+}

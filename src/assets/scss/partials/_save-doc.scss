@@ -1,0 +1,73 @@
+/* Save approval doc */
+
+.save-doc {
+
+	.label {
+		color: $color-black;
+		font-size: 26px;
+		font-family: $font-secondary;
+		padding-right: 25px;
+		max-width: 250px;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.doc-content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.block-title {
+		padding-top: 60px;
+	}
+
+	.action-buttons {
+		margin-top: 90px;
+		text-align: right;
+	}
+
+	.doc-details {
+		width: 56%;
+		max-width: 510px;
+		padding-right: 25px;
+
+		.text-field {
+
+			&.primary {
+
+				label {
+					max-width: 200px;
+				}
+			}
+		}
+	}
+
+	.doc-file {
+		width: 44%;
+		max-width: 525px;
+		margin-top: 25px;
+		padding-left: 25px;
+
+		.file {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.select-box {
+		padding: 25px 0;
+
+		.Select-input {
+			height: 55px;
+			line-height: 55px;
+		}
+
+		.Select-control {
+			height: 55px;
+		}
+
+		.Select-placeholder, .Select--single > .Select-control .Select-value {
+			line-height: 55px;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+/* Button responsive styles */
+
+@media (max-width: $screen-sm) {
+
+	.btn {
+
+		&.w-md {
+			max-width: 215px;
+		}
+
+		&.w-lg {
+			max-width: 260px;
+		}
+
+		&.w-xl {
+			max-width: 280px;
+		}
+
+		&.filled {
+
+			&.icon {
+
+				i {
+					font-size: 17px;
+					line-height: 45px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.btn {
+		font-size: $sm;
+	}
+}
